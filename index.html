@@ -14,13 +14,13 @@
         <nav>
           <ol>
             <li>
-              <a href="">Portafolio</a>
+              <a href="/portafolio/">Portafolio</a>
             </li>
             <li>
-              <a href="">Experiencia</a>
+              <a href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a href="">Trabajemos juntos</a>
+              <a href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
@@ -32,7 +32,7 @@
       </h1>
       <img src="img/hero.jpg" alt="Imagen principal del sitio" width="500">
     </section>
-    <section>
+    <section id="portafolio">
         <h2>Portafolio (Protectos destacados)</h2>
       <article>
           <h3>Platzi Video</h3>
@@ -43,7 +43,7 @@
           <img src="img/platzi-video-react-native.png" alt="Protecto del curso de React" width="500">
         </article>
     </section>
-    <section>
+    <section id="eventos">
         <h2>Más sobre mi experiencia</h2>
       <article>
         <figure>
@@ -51,10 +51,18 @@
         </figure>
         <h3>PlatziConf México 2018</h3>
         <p>El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-        <a>Ver Plática</a>
+        <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
       </article>
     </section>
-    <section>sección contacto</section>
+    <section id="contacto">
+      <form action="/suscripcion/" method="post">
+        <h3>¿Creamos algo juntos?</h3>
+        <!-- <label for="email">Déjame tu email</label> -->
+        <input type="email" name="" id="email" placeholder="Déjame tu email" value="@gmail.com">
+        <!-- <input type="submit" value="Texto del boton"> -->
+        <button>Enviar</button>
+      </form>
+    </section>
     <footer>footer</footer>
   </body>
 </html><!--  -->
