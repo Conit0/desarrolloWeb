@@ -40,6 +40,19 @@ El atributo "!important" proporciona un nivel de importancia para determinado es
 
 un metodo para ser más organizado es ir colocando las clases en la hoja de estilos y tenerlos comentariados y listos para el momento de usuarlos
 
+Los motores de busqueda cargan una hoja de estilos por defecto y es distinta para cada navegador.
+
+Las clases es la semantica con la que yo represento un objeto del documento html para poder capturarlo por medio de la hoja de estilos y darle un estilo
+
+Colocar buenos nombres a las clases puede resultar complejo por eso trata de que sean claras y ten imaginación y creatividad
+
+
+En CSS puedes valerte de los "id" para darle estilos a un objeto del documento HTML, recuerda que los "id" son únicos, sin embargo es conveniente usar clases ya que se facilta su uso en varios elementos y permite seccionar las clases para CSS y los ides para JS dandole una estructura. Por eso se recomienda en CSS el uso de clases.
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+
 
 
 
