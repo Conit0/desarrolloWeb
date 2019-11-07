@@ -85,6 +85,16 @@ En el siguiente ejemplo, el selector descendente se compone de cuatro selectores
 p a span em { text-decoration: underline; }
 Los estilos de la regla anterior se aplican a los elementos de tipo <em> que se encuentren dentro de elementos de tipo <span>, que a su vez se encuentren dentro de elementos de tipo <a> que se encuentren dentro de elementos de tipo <p>.
 
+Para el espaciado entre letras se usa
+
+p {letter-spacing: -.2px;}
+Se le da esta medida de espaciado para ademas tener un nivel de diseño que se vea la creatividad del diseñador web
+Tener detalles como esto dara un plus: alto de línea, espaciado de la funete, peso de la fuente, tamaño de la fuente. Resulta ser un Skill importante.
+ Manejar el texto de manera habitual dentro de HTML y manipularlo dentro de CSS para no afectar el posicionamiento dentro del navegador poniendo por ejemplo mayusculas en el HTML pues cuando el navegador indexe nuestro sitio aparecera todo en mayúsculas 
+
+
+
+
 
 
 
