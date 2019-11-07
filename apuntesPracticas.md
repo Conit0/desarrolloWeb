@@ -47,10 +47,44 @@ Las clases es la semantica con la que yo represento un objeto del documento html
 Colocar buenos nombres a las clases puede resultar complejo por eso trata de que sean claras y ten imaginación y creatividad
 
 
-En CSS puedes valerte de los "id" para darle estilos a un objeto del documento HTML, recuerda que los "id" son únicos, sin embargo es conveniente usar clases ya que se facilta su uso en varios elementos y permite seccionar las clases para CSS y los ides para JS dandole una estructura. Por eso se recomienda en CSS el uso de clases.
+En CSS puedes valerte de los "id" para darle estilos a un objeto del documento HTML, recuerda que los "id" son únicos, sin embargo es conveniente usar clases ya que se facilta su uso en varios elementos y permite seccionar las clases para CSS y los ides para JS dandole una estructura. Por eso se recomienda en CSS el uso de clases, agrego también que dentro de esta industri generalemente se usan nombres en ingles.
 
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+
+
+El estilo de escritura puede ser:
+camelCase
+Separación por dash -
+sankeCase _
+
+El pixel es la menor unidad homogenea de color que forma parte de una imagen digital
+
+Podemos usar el selector cuando no sepamos cual es su id lo copiaremos desde el inspector de elementos, ademas resulta más valioso hacerlo de esta forma pues interactuas más y mejor, ves el modelo de caja
+
+Recursos para diseñadores web, espero les sea de ayuda.
+https://www.youtube.com/watch?v=CEpUfqlrr6A
+
+https://fonts.google.com/
+
+Aquí les dejo un link sobre que tener en cuenta cuando se elige una tipografía. https://design.google/library/choosing-web-fonts-beginners-guide/
+
+En este caso, CSS permite agrupar todas las reglas individuales en una sola regla con un selector múltiple. Para ello, se incluyen todos los selectores separados por una coma (,) y el resultado es que la siguiente regla CSS es equivalente a las tres reglas anteriores:
+
+h1, h2, h3 {
+  color: #8A8E27;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+Los selectores descendentes siempre están formados por dos o más selectores separados entre sí por espacios en blanco. El último selector indica el elemento sobre el que se aplican los estilos y todos los selectores anteriores indican el lugar en el que se debe encontrar ese elemento.
+
+En el siguiente ejemplo, el selector descendente se compone de cuatro selectores:
+
+p a span em { text-decoration: underline; }
+Los estilos de la regla anterior se aplican a los elementos de tipo <em> que se encuentren dentro de elementos de tipo <span>, que a su vez se encuentren dentro de elementos de tipo <a> que se encuentren dentro de elementos de tipo <p>.
+
 
 
 
