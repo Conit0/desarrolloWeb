@@ -92,6 +92,12 @@ Se le da esta medida de espaciado para ademas tener un nivel de diseño que se ve
 Tener detalles como esto dara un plus: alto de línea, espaciado de la funete, peso de la fuente, tamaño de la fuente. Resulta ser un Skill importante.
  Manejar el texto de manera habitual dentro de HTML y manipularlo dentro de CSS para no afectar el posicionamiento dentro del navegador poniendo por ejemplo mayusculas en el HTML pues cuando el navegador indexe nuestro sitio aparecera todo en mayúsculas 
 
+La etiqueta "<div>" no ofrece nungún valor semantico pero resulta muy util para seccionar el contenido de la página y poder darle estilos y manipularlo de otras formas que de no ser así el objeto que lo tenga hara más compleja la manipulación.
+Solapar elementos::::Colocar o sobreponer una cosa sobre otra cubriéndola parcialmente.
+
+Página de referencias al momento escribir CSS: https://www.w3c.es/Divulgacion/GuiasReferencia/CSS21/
+
+
 
 
 
