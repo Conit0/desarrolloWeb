@@ -91,3 +91,16 @@ h1 strong {
   color: white;
   text-decoration: dashed;
 }
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  flex-shrink: 0;
+}

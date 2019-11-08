@@ -196,7 +196,21 @@ Si uno quiere hacer que el ancho no sea afectado por el borde o el padding (es d
 box-sizing: border-box;
 Con border-box se hace que la caja siempre ocupe el tamaño hasta su borde del ancho (no importa el grosor del borde o el padding, nunca llegará a medir más de lo que se le definió en ancho y alto). Es decir, al añadir padding o hacer crecer el borde, estos crecerán hacia adentro, respetando el ancho como un limite que no se puede extender.
 
+Display nos indica como debe ser mostrado un elemento en HTML::::
+Display block: Ocupa todo el ancho posible en el eje de x
+Display inline: Ocupa todo el ancho de su contenido y permite a otros elementos posicionarse a su costado
+Display inline-block: Se le puede asignar un ancho y un alto, y a diferencia de display block, permite que otros elementos se posicionen a su costado.
 
+
+Flexbox
+Link en ingles para practicar: http://www.flexboxdefense.com/
+https://filisantillan.com/el-gran-poder-de-css3-flexbox/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Tener en cuenta donde se ubicara la propiedad ya que unas son para hijos y otras para padres.
+como es el caso de: 
+flex-wrap: wrap; Para padres 
+flex-shrink: 0; para hijos
 
 
 
