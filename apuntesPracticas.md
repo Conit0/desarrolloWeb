@@ -97,8 +97,41 @@ Solapar elementos::::Colocar o sobreponer una cosa sobre otra cubriéndola parcia
 
 Página de referencias al momento escribir CSS: https://www.w3c.es/Divulgacion/GuiasReferencia/CSS21/
 
+https://color.adobe.com/es/create
+https://annystudio.com/software/colorpicker/
+
+border: Establece el tamaño,tipo y estilo (10px solid red)
+border-color: Establece el color del borde en todos los lados (si esta propiedad no se utiliza, utilizará el color del texto)
+border-width: Establece el grosor del borde
+border-style: Establece el estilo del borde (se utiliza frecuentemente solid)
+
+border-radius: Redondea (por pixeles) las esquinas de los bordes
+
+border-radius:10px 10px 30px 10px;
+Así se puede poner el bordeado de cada una de las esquinas.
+Primer valor: esquina superior izquierda.
+Segundo valor: esquina superior derecha.
+Tercer valor: esquina inferior derecha.
+Cuarto valor: esquina inferior izquierda.
+
+Links
+
+Hola a todos. Queria compartir este link que me parecio interesante y podria ser de guia cuando se nos olvide los conceptos. Esta en ingles aunque el traductor de Google no lo traduce tan mal ??
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Esta herramienta web nos ayuda a experimentar más con los bordes cssmatic.com/es ?
+
+Aquí hay una guía completa de los bordes con sus propiedades y shorhand más usados:
+https://lenguajecss.com/p/css/propiedades/bordes
+
+Si alguien quiere generar un border de manera automática puede hacerlo en
+http://angrytools.com/css-generator/border/
+
+Hacer triangulos dentro de CSS???
 
 
+
+	
 
 
 
