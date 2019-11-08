@@ -97,8 +97,17 @@ Solapar elementos::::Colocar o sobreponer una cosa sobre otra cubriéndola parcia
 
 Página de referencias al momento escribir CSS: https://www.w3c.es/Divulgacion/GuiasReferencia/CSS21/
 
+<<<<<<< Updated upstream
 https://color.adobe.com/es/create
 https://annystudio.com/software/colorpicker/
+=======
+Para finalizar te dejo unos enlaces bastante didacticos para que juegues y conozcas un poco mas sobre todas las propiedades de flexbox y como funcionan.
+https://flexboxfroggy.com/#es
+
+y este otro un poco mas serio;
+https://the-echoplex.net/flexyboxes/
+
+>>>>>>> Stashed changes
 
 border: Establece el tamaño,tipo y estilo (10px solid red)
 border-color: Establece el color del borde en todos los lados (si esta propiedad no se utiliza, utilizará el color del texto)
@@ -159,6 +168,14 @@ Suponiendo que tienes un cuadro y dentro de ese cuadro tienes texto:
 En mi opinión en la hoja de estilos antes de empezar, siempre hago un css reset, para evitar tener problemas con los bordes, letras, etc. Aca les dejo el link: https://meyerweb.com/eric/tools/css/reset/
 
 
+¿Cuando usar padding o marging?
+Diferencias de las propiedades padding y margin:
+Margin es el margen que hay desde un elemento hasta los que tenga al lado.
+Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor.
+
+Padding utiliza los mismos valores que margin y también están ordenados de acuerdo a la posición del sentido de las agujas del reloj
+
+Al momento de definir el margen o el relleno se debe tener en cuenta el borde y el fondo con ello podremos encontrar la propoción que aplicaremos al proyecto.
 
 
 
