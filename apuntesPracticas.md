@@ -212,6 +212,18 @@ como es el caso de:
 flex-wrap: wrap; Para padres 
 flex-shrink: 0; para hijos
 
+Guia de referencia ::::::::: https://www.w3c.es/Divulgacion/GuiasReferencia/CSS21/
+Guia en ingles para saber como escojer una fuente :::::::: https://design.google/library/choosing-web-fonts-beginners-guide/
+
+CSS Grid Layuot :::: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout
+Usando las cajas flexibles CSS ::::::::::::::::::: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Usando_las_cajas_flexibles_CSS
+
+Secion en vivo de la beca platziLive :::::::::  https://developer.mozilla.org/es/docs/Web/API/Fetch_API
+*Dibujar un problema que require una lógica compleja, esto para sintetixar mejor las ideas que escribiremos en el código y no desviarnos del problema que deseamos resolver.
+
+
+Alineando elementos de forma vertical
+Por medio de "justify-content" o "align-self" (alineate a ti mismo, seria para etiquetas hij@ que deseamos manipular de otra forma) no se suele usar amenudo pero es una forma fácil de manupular estos elementos.
 
 
 
