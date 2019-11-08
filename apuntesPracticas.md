@@ -130,9 +130,33 @@ http://angrytools.com/css-generator/border/
 Hacer triangulos dentro de CSS???
 
 
+Div y span:
+son contenedores.
 
-	
+Los contenerdores son elementos utilizados en el HTML para agrupar secciones, dependiendo de que tipo de contenedor utilices, el contenido tendra un valor semantico diferente.
 
+El span por ejemplo, es un contenedor de texto, se utiliza para agrupar ciertas partes del mismo y darle propiedades css.
+
+El div es un contenedor de igual manera, pero que no tiene valor semantico alguno, dentro no debe ir nada en especifico, puede agrupar cualquier tipo de elemento.
+
+Id y class:
+son selectores css.
+
+Son utilizados para darle a los elementos del HTML un identificador con el cual hacer referencia desde el codigo css.
+Esa es la función de las dos, pero existe una diferencia.
+El id es utilizado para identificar unicamente a un elemento.
+El class es un identificador que pueden tener multiples elementos, y esos multiples elementos adoptar dichas caracteristicas que declares en el css.
+
+
+Suponiendo que tienes un cuadro y dentro de ese cuadro tienes texto:
+    El espacio que existe entre en cuadro y el texto es el padding.
+    El espacio que existe entre el cuadro y otro objeto fuera de él es margin.
+
+1- El margin colapsing: No es la suma de margenes de dos elementos diferentes, Es la integración del elemento con mayor margen a un elemento con menor margen ejemplo: si un elemento tiene un margen de 50 pixels. y otro elemento tiene un margen de 20 pixels. no se suman sino que el de 50 pixels. integra al de 20 pixels por lo tanto este amplia su margen a 50 y así ambos comparten el mismo margen de 50 pixels .
+
+2.- margin : el orden de sus parámetros es (TOP->RIGHT->BOTTOM->LEFT)
+
+En mi opinión en la hoja de estilos antes de empezar, siempre hago un css reset, para evitar tener problemas con los bordes, letras, etc. Aca les dejo el link: https://meyerweb.com/eric/tools/css/reset/
 
 
 
