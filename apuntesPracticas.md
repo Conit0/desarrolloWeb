@@ -177,7 +177,24 @@ Padding utiliza los mismos valores que margin y también están ordenados de acuer
 
 Al momento de definir el margen o el relleno se debe tener en cuenta el borde y el fondo con ello podremos encontrar la propoción que aplicaremos al proyecto.
 
+box-sizing: border-box; nos permite resetear el modelo de caja
+Las partes que componen cada caja y su orden de visualización desde el punto de vista del usuario son las siguientes:
 
+Contenido (content): se trata del contenido HTML del elemento (las palabras de un párrafo, una imagen, el texto de una lista de elementos, etc.)
+Relleno (padding): espacio libre opcional existente entre el contenido y el borde.
+Borde (border): línea que encierra completamente el contenido y su relleno.
+Imagen de fondo (background image): imagen que se muestra por detrás del contenido y el espacio de relleno.
+Color de fondo (background color): color que se muestra por detrás del contenido y el espacio de relleno.
+Margen (margin): separación opcional existente entre la caja y el resto de cajas adyacentes.
+
+
+Se pueden alterar los modelos de caja de varias formas, entre esas:
+por un display especial.
+por una propiedad especial que nos ayude a hacer que este modelo de caja funcione de una manera más fácil de leer.
+Si uno quiere hacer que el ancho no sea afectado por el borde o el padding (es decir, que estos dos ultimos no sumen al ancho general) existe una propiedad llamada box sizing.
+
+box-sizing: border-box;
+Con border-box se hace que la caja siempre ocupe el tamaño hasta su borde del ancho (no importa el grosor del borde o el padding, nunca llegará a medir más de lo que se le definió en ancho y alto). Es decir, al añadir padding o hacer crecer el borde, estos crecerán hacia adentro, respetando el ancho como un limite que no se puede extender.
 
 
 
