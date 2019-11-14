@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Jonathan Cardozo</title>
-    
-    <link rel="icon" type="img/png" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
 
-  </head>
-  <body>
-    <div class="flexbox">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-    <header class="header">
-      <div>
-        <figure class="logo">
-          <img src="img/logo.png" alt="Texto alernativo que se mostrara sino carga la imagen"/>
-        </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" href="/portafolio/">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" href="#eventos">Experiencia</a>
-            </li>
-            <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Jonathan Cardozo</title>
+
+  <link rel="icon" type="img/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <figure class="logo">
+      <img src="img/logo.png" alt="Texto alernativo que se mostrara sino carga la imagen" />
+    </figure>
+    <nav class="menu">
+      <ol>
+        <li>
+          <a class="link" href="/portafolio/">Portafolio</a>
+        </li>
+        <li>
+          <a class="link" href="#eventos">Experiencia</a>
+        </li>
+        <li>
+          <a class="link" href="#contacto">Trabajemos juntos</a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>
+      Hola! Soy <strong>Jonathan Cardozo</strong> <br /> Desarrollador <strong>JavaScript</strong> Full Stack <br />con
+      pasión por el <strong>ciclismo</strong>
+    </h1>
+    <!-- <img src="img/hero.jpg" alt="Imagen principal del sitio" width="500"> -->
+  </section>
+  <section id="portafolio" class="portfolio">
+    <h2>Portafolio (Protectos destacados)</h2>
+    <article class="project">
+      <div class="project-details">
+        <h3 class="project-title">Platzi Video</h3>
+        <h6 class="poject-course">React Native / React</h6>
+        <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p class="project-url"><small><strong>Visitalo en:</strong> https://github.com/ojack/hydra</small></p>
+        <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para
+          enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de
+          navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
       </div>
-    </header>
-    <section class="hero">
-      <h1>
-        Hola! Soy <strong>Jonathan Cardozo</strong> <br/> Desarrollador <strong>JavaScript</strong> Full Stack <br/>con pasión por el <strong>ciclismo</strong> 
-      </h1>
-      <!-- <img src="img/hero.jpg" alt="Imagen principal del sitio" width="500"> -->
-    </section>
-    <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Protectos destacados)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Platzi Video</h3>
-          <h6 class="poject-course">React Native / React</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-          <p class="project-url"><small><strong>Visitalo en:</strong> https://github.com/ojack/hydra</small></p>
-          <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-        </div>
-          <figure class="project-imageContainer">
-            <img class="poject-image" src="img/platzi-video-react-native.png" alt="Protecto del curso de React" width="500">
-          </figure>
-          </figure>
-        </article>
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="poject-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p class="project-url"><small><strong>Visitalo en:</strong> https://github.com/ojack/hydra</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-          </div>
-            <figure class="project-imageContainer">
-              <img class="poject-image" src="img/platzi-video-react-native.png" alt="Protecto del curso de React" width="500">
-            </figure>
-            </figure>
-          </article>
-    </section>
-    <section id="eventos">
-        <h2>Más sobre mi experiencia</h2>
-      <article class="event">
-        <figure class="even-imageContainer">
-          <img class="event-image" src="img/platzi-conf.jpg" alt="imagen de la conferencia" width="500"/>
-        </figure>
-        <h3 class="event-title">PlatziConf México 2018</h3>
-        <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-        <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-      </article>
-    </section>
-    <section id="contacto" class="contact">
-      <form action="/suscripcion/" method="post" class="form-email">
-        <h3>¿Creamos algo juntos?</h3>
-        <!-- <label for="email">Déjame tu email</label> -->
-        <input type="email" name="" id="email" placeholder="Déjame tu email" value="@gmail.com">
-        <!-- <input type="submit" value="Texto del boton"> -->
-        <button>Enviar</button>
-      </form>
-    </section>
-    <footer class="footer">footer</footer>
-  </body>
+      <figure class="project-imageContainer">
+        <img class="poject-image" src="img/platzi-video-react-native.png" alt="Protecto del curso de React" width="500">
+      </figure>
+      </figure>
+    </article>
+    <article class="project">
+      <div class="project-details">
+        <h3 class="project-title">Platzi Video</h3>
+        <h6 class="poject-course">React Native / React</h6>
+        <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p class="project-url"><small><strong>Visitalo en:</strong> https://github.com/ojack/hydra</small></p>
+        <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para
+          enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de
+          navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+      </div>
+      <figure class="project-imageContainer">
+        <img class="poject-image" src="img/platzi-video-react-native.png" alt="Protecto del curso de React" width="500">
+      </figure>
+      </figure>
+    </article>
+  </section>
+  <section id="eventos">
+    <h2>Más sobre mi experiencia</h2>
+    <article class="event">
+      <figure class="even-imageContainer">
+        <img class="event-image" src="img/platzi-conf.jpg" alt="imagen de la conferencia" width="500" />
+      </figure>
+      <h3 class="event-title">PlatziConf México 2018</h3>
+      <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este evento
+        te comparto cómo tener una vida de constante aprendizaje.</p>
+      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+    </article>
+  </section>
+  <section id="contacto" class="contact">
+    <form action="/suscripcion/" method="post" class="form-email">
+      <h3>¿Creamos algo juntos?</h3>
+      <!-- <label for="email">Déjame tu email</label> -->
+      <input type="email" name="" id="email" placeholder="Déjame tu email" value="@gmail.com">
+      <!-- <input type="submit" value="Texto del boton"> -->
+      <button>Enviar</button>
+    </form>
+  </section>
+  <footer class="footer">footer</footer>
+</body>
+
 </html><!--  -->

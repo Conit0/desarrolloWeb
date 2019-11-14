@@ -85,11 +85,28 @@ h1 strong {
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 .header a {
   color: white;
   text-decoration: dashed;
+  display: flex;
+}
+.header ol {
+  display: flex;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
 }
 
 .flexbox {
