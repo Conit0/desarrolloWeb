@@ -16,7 +16,6 @@ gris claro: #626262;
 background gris: #1b2127; 
 Celeste: #026fff; */
 
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
@@ -86,8 +85,9 @@ h1 strong {
   background-color: #1b2127;
   color: white;
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  height: 90px;
+  /* align-items: center; Centro el contenido verticalmente */
+  justify-content: space-between; /*Centro el contenido horizontalmente*/
 }
 
 .header a {
@@ -95,8 +95,26 @@ h1 strong {
   text-decoration: dashed;
   display: flex;
 }
+
+.menu{
+  height: inherit; /*esta proiedad hace que herede (inherit) de su etiqueta padre y lo podemos revisar en el modelo de caja que nos ofrece el inspector de elementos*/
+}
+
 .header ol {
   display: flex;
+  height: inherit; 
+  /*Este no es el lugar adecuado para centrar los elementos veriticalmente "align-items: center;"*/
+}
+.header ol li{
+  height: inherit;
+}
+
+/*Se pasaron las propiedades hasta el ultimo elemento hijo para que en la página se pueda selecionar con un clic en todo su alto ya que esta heredando de su padres esa medidad */
+.header a {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  padding: 0 10px; /*Cero arriba y abajo & 10 para la izq y derecha*/
 }
 
 ol, ul {

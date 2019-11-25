@@ -225,12 +225,15 @@ Secion en vivo de la beca platziLive :::::::::  https://developer.mozilla.org/es
 Alineando elementos de forma vertical
 Por medio de "justify-content" o "align-self" (alineate a ti mismo, seria para etiquetas hij@ que deseamos manipular de otra forma) no se suele usar amenudo pero es una forma fácil de manupular estos elementos.
 
+25 de Noviembre del 2019
 
+Los plugins facilitaran tu vida al momento de desarrollar código
 
+La propiedad de CSS "display: flex" solo se hereda a los hijos directos si un de esos hijos tiene un hijo ya no tendra la propiedad de su abuelo por así decirlo, por lo tanto hay que definirla propiedad (en esta caso al "nieto") 
 
+En esta clase vemos que además de las propiedades relacionadas con display:flex, en lo que se refiere a la alineación de elementos internos, existen también propiedades equivalentes que nos permite alinear textos dentro de un contenedor, estas propiedades son: text-align y vertical-align.
 
-
-
+https://www.saberespractico.com/web/emoticonos-en-html/
 
 
 
