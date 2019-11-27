@@ -32,7 +32,8 @@ h1 {
   line-height: 1.5em;
   letter-spacing: -.2px;
   color: white;
-  margin: 100px 520px 70px 30px;
+  margin: 0px;
+  /* margin: 100px 520px 70px 30px; */
   /* text-transform: uppercase;
   text-decoration: underline; */
 }
@@ -48,6 +49,8 @@ h1 strong {
   background-size:  500px 300px;
   background-repeat: no-repeat;
   background-position-x: right;
+  display: flex; /*Esto hace que el elemento se ubique dentro del alto que se le asigno*/
+  align-items: center;
 }
 
 .portfolio {
@@ -85,8 +88,8 @@ h1 strong {
   background-color: #1b2127;
   color: white;
   display: flex;
-  height: 90px;
-  /* align-items: center; Centro el contenido verticalmente */
+  height: 70px;
+   align-items: center; /* Centro el contenido verticalmente */
   justify-content: space-between; /*Centro el contenido horizontalmente*/
 }
 
@@ -139,3 +142,16 @@ figure {
   border: 1px solid red;
   flex-shrink: 0;
 }
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+}
+
+.footer img {
+  vertical-align: middle; /*Centro el texto dentro del eje Y*/
+}
+
+.footer a {color: white;}

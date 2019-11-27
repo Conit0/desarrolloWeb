@@ -234,10 +234,23 @@ La propiedad de CSS "display: flex" solo se hereda a los hijos directos si un de
 En esta clase vemos que además de las propiedades relacionadas con display:flex, en lo que se refiere a la alineación de elementos internos, existen también propiedades equivalentes que nos permite alinear textos dentro de un contenedor, estas propiedades son: text-align y vertical-align.
 
 https://www.saberespractico.com/web/emoticonos-en-html/
+Web con codigos para insertar emoticones dentro de nuestro documento HTML
 
+Algunos shortcuts
+win + ctrl + d = en win 10 crea un nuevo escritorio
+Win + Shift + S = Para hacer screensho
+Un consejo en Office si desean guardar un archivo rapido "Guaradar como" utilicen F12
 
+Buena practica es ponerle un ancho(width) y alto(heigth) a los elemtos img dentro del documento HTML 
 
+Algo que he hecho y me ha funcionado es retarme, por ejemplo, luego de terminar el proyecto, hacer 5 diseños diferentes uno por día, es facil encontrar landing en internet y la idea es ir aplicando todos y cada uno de los conceptos, seguramente el primero será dificil pero conforme pase el tiempo será más facil.
+Otra cosa que puedes hacer también es lo que se llama el CSS Zen: busca un sitio que valga la pena copiar, le quitas el CSS y copias su texto, y luego lo modelas con tus propios estilos, primero buscando hacerlo similar solo con CSS, y luego con tus propias ideas. Se descubre un montón de cosas nuevas.
 
+LANDING PAGE
+https://www.youtube.com/watch?v=WZqJ1R4-8aA
+Enfocar al cliente en la información que le interesa y por la cual llego a esta página.
+
+con display flex puedo poner un elemento junto a otro como por ejemplo dos <div>
 
 
 
