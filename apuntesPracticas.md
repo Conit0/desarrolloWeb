@@ -236,10 +236,37 @@ En esta clase vemos que además de las propiedades relacionadas con display:flex,
 https://www.saberespractico.com/web/emoticonos-en-html/
 Web con codigos para insertar emoticones dentro de nuestro documento HTML
 
-Algunos shortcuts
-win + ctrl + d = en win 10 crea un nuevo escritorio
-Win + Shift + S = Para hacer screensho
-Un consejo en Office si desean guardar un archivo rapido "Guaradar como" utilicen F12
+*******Algunos shortcuts
+*******win + ctrl + d = en win 10 crea un nuevo escritorio
+*******Win + Shift + S = Para hacer screensho
+*******Un consejo en Office si desean guardar un archivo rapido "Guaradar *******como" utilicen F12
+*******En Mozilla con las teclas shift MAS ctrl:::--->::--->:::
+::-->:::-->::-->:::MAS suprimir muestra una ventana para borrar el historial3
+::-->:::-->::-->:::MAS inicio seleciona desde donde este el curso, especificamente la línea que escribe el texto, hacia arriba.
+::-->:::-->::-->:::MAS fin seleciona desde donde este el curso hacia abajo
+::-->:::-->::-->:::MAS RePág permite mover la pestaña del navegador hacia la izquierda.
+::-->:::-->::-->:::MAS AvPág permite mover la pestaña del navegador hacia la derecha
+::-->:::-->::-->:::MAS m muestra el modo móvil 
+::-->:::-->::-->:::MAS c mustra el inspector de elemtos presto para selecionar
+::-->:::-->::-->:::MAS a --- t muesrtra el administrador de complemtos de mozilla
+::-->:::-->::-->:::MAS s activa el capturador de pantallas (screenshot)
+::-->:::-->::-->:::MAS j --- i inspector de elementos en una ventana aparte
+::-->:::-->::-->:::MAS k inspector de elementos sobre la consosla directamente
+::-->:::-->::-->:::MAS r recarga la página junto con el cache
+::-->:::-->::-->:::MAS e inspector de elemetos sobre la red o network
+::-->:::-->::-->:::MAS w --- q cierra toda la ventana
+::-->:::-->::-->:::MAS 3 --- 9 el primero va hacia la derecha mientras el segundo va en sentido izquierdo PERO solo en el teclado numerico que esta aparte del las letras, el que se activa con el BloqNum.
+::-->:::-->::-->:::MAS 4  --- 6 selecciona texto desde el sitio de la página donde hayas hecho click el primero, recordemos que el html es un archivo de texto.
+::-->:::-->::-->:::MAS 1 --- 7  [2 --- 8 (hace lo mismo)]despalzar el scroll de la página, el primero (1) al final y el segundo (7) hacia arriba y hasta aquí van los que son con el teclado BloqNum.
+::-->:::-->::-->:::MAS
+::-->:::-->::-->:::MAS
+*******
+*******
+*******
+*******
+*******
+*******
+*******
 
 Buena practica es ponerle un ancho(width) y alto(heigth) a los elemtos img dentro del documento HTML 
 
@@ -250,16 +277,23 @@ LANDING PAGE
 https://www.youtube.com/watch?v=WZqJ1R4-8aA
 Enfocar al cliente en la información que le interesa y por la cual llego a esta página.
 
-con display flex puedo poner un elemento junto a otro como por ejemplo dos <div>
+con display: flex; puedo poner un elemento junto a otro como por ejemplo dos <div>
 
+Les recomiendo esta página para hacer sus imagenes dummies y puedan armar sus plantillas para sus proyectos posteriores.
+https://dummyimage.com/
 
+Esta es una combinación muy util, en el elemento padre:
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+La letra por defecto en los navegadores dentro de etiquetas con contenido de texto el tamaño por defecto que generalmente tienen es de 16px
 
+ES MUY IMORTANTE QUE TODO QUEDE BIEN ESCRITO PARA QUE NO LA LIES MAS ADELANTE CUANDO EL CODIGO SE HAGA MAS EXTE NSO
 
+Para centrar algo horizontalmente en navegadores modernos, usa display: flex; justify-content: center; 
 
-
-
-
+Con el inspecionador de elementos puedo ir verificando las alturas de todos los elemetos de mi archivo html y saber donde se encuentra el posible error que hace que un estilo CSS no se vea como nosotros queremos.
 
 
 

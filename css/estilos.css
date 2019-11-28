@@ -41,6 +41,14 @@ h1 {
 h1 strong {
   color: #026fff;
 }
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
 
 .hero {
   height: 300px;
@@ -55,6 +63,7 @@ h1 strong {
 
 .portfolio {
   background: #fafafa;
+  padding: 20px;
 }
 
 .project {
@@ -67,17 +76,41 @@ h1 strong {
   /* border-width: 15px;
   border-style: solid; */
   /* border-top-left-radius: 50px; */
+  /* margin: 10px; El portafolio ya le esta dando un espaciado interno*/
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 10px;
   margin-bottom: 15px;
   padding: 20px;
   background: white;
+  display: flex; /*Me permite tener un elemento al lado de otro*/
+  align-items: center;
+  justify-content: space-between;
   }
 
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-descripton {
+  font-size: 20px;
+}
+/* .project-date {
+} */
+.project-title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+.project div {
+  line-height: 20px;
+}
 .project-details {
   width: 500px;
-  height: 100px;
+  /* height: 100px; */
 }
 
 .project-imageContainer {
