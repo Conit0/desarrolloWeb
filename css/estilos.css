@@ -6,7 +6,6 @@
 
 /* .link */
 
-
 /* selector de id */
 
 /* #portafolio */
@@ -17,44 +16,48 @@ background gris: #1b2127;
 Celeste: #026fff; */
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0;
+  /*Fijar cabecera padding-top: 70px; Relleno superior igual a la altura de la cabecera*/
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Fjalla One', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
   font-weight: normal;
   /* font-style: italic; */
 }
-
 h1 {
   font-size: 40px;
   line-height: 1.5em;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   color: white;
   margin: 0px;
   /* margin: 100px 520px 70px 30px; */
   /* text-transform: uppercase;
   text-decoration: underline; */
 }
-
-h1 strong {
-  color: #026fff;
-}
 h2 {
   color: #026fff;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
 }
+h1 strong {
+  color: #026fff;
+}
 
 .hero {
   height: 300px;
-  background: url('../img/hero.jpg'), #1b2127;
+  background: url("../img/hero.jpg"), #1b2127;
   /* background-color: #1b2127; */
-  background-size:  500px 300px;
+  background-size: 500px 300px;
   background-repeat: no-repeat;
   background-position-x: right;
   display: flex; /*Esto hace que el elemento se ubique dentro del alto que se le asigno*/
@@ -85,8 +88,7 @@ h2 {
   display: flex; /*Me permite tener un elemento al lado de otro*/
   align-items: center;
   justify-content: space-between;
-  }
-
+}
 .project-course,
 .project-date,
 .project-url {
@@ -97,24 +99,23 @@ h2 {
 }
 /* .project-date {
 } */
-.project-title{
+.project-title {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
-}
-.project strong {
-  font-family: 'Fjalla One', sans-serif;
-}
-.project div {
-  line-height: 20px;
 }
 .project-details {
   width: 500px;
   /* height: 100px; */
 }
-
 .project-imageContainer {
   width: 500px;
+}
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+.project div {
+  line-height: 20px;
 }
 
 .header {
@@ -122,29 +123,27 @@ h2 {
   color: white;
   display: flex;
   height: 70px;
-   align-items: center; /* Centro el contenido verticalmente */
+  align-items: center; /* Centro el contenido verticalmente */
   justify-content: space-between; /*Centro el contenido horizontalmente*/
+  /* Fijar cabecera mas otra propiedad que esta en el body
+  width: 100%; hacemos que la cabecera ocupe el ancho completo de la página
+	left: 0;  Posicionamos la cabecera al lado izquierdo
+	top: 0;  Posicionamos la cabecera pegada arriba 
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
-
 .header a {
   color: white;
   text-decoration: dashed;
   display: flex;
 }
-
-.menu{
-  height: inherit; /*esta proiedad hace que herede (inherit) de su etiqueta padre y lo podemos revisar en el modelo de caja que nos ofrece el inspector de elementos*/
-}
-
 .header ol {
   display: flex;
-  height: inherit; 
+  height: inherit;
   /*Este no es el lugar adecuado para centrar los elementos veriticalmente "align-items: center;"*/
 }
-.header ol li{
+.header ol li {
   height: inherit;
 }
-
 /*Se pasaron las propiedades hasta el ultimo elemento hijo para que en la página se pueda selecionar con un clic en todo su alto ya que esta heredando de su padres esa medidad */
 .header a {
   display: flex;
@@ -153,7 +152,12 @@ h2 {
   padding: 0 10px; /*Cero arriba y abajo & 10 para la izq y derecha*/
 }
 
-ol, ul {
+.menu {
+  height: inherit; /*esta proiedad hace que herede (inherit) de su etiqueta padre y lo podemos revisar en el modelo de caja que nos ofrece el inspector de elementos*/
+}
+
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -182,9 +186,48 @@ figure {
   display: flex;
   align-items: center;
 }
-
 .footer img {
   vertical-align: middle; /*Centro el texto dentro del eje Y*/
 }
+.footer a {
+  color: white;
+}
 
-.footer a {color: white;}
+.event-list-title {
+  margin-left: 20px;
+}
+.event-list {
+  display: flex; /*Esto se aplica al elemento padre para que sus elemetos hijos adquieran la propiedad*/
+}
+.event {
+  /* border: 1px solid red; */
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden; /*Cuando un elemento se desborde del elemmto .event se va a ocultar*/
+  background: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover; /*Adapta el contenido según el alto y ancho de su contenedor*/
+}
+.event-detail {
+  margin: 20px 40px; /*separa del contendor que lo contiene en este caso article*/
+  margin-top: -40px; /*Ahora esta por encima de la imagen que es el otro elemento*/
+  background-color: white;
+  position: relative;
+  padding: 20px; /*Para que el texto no se junte con las paredes del elemento que lo contiene*/
+  text-align: center; /*Alineado de los textos*/
+}
+.event-description {
+  text-align: left;
+}
+.event-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}

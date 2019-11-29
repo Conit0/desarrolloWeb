@@ -293,7 +293,14 @@ ES MUY IMORTANTE QUE TODO QUEDE BIEN ESCRITO PARA QUE NO LA LIES MAS ADELANTE CU
 
 Para centrar algo horizontalmente en navegadores modernos, usa display: flex; justify-content: center; 
 
-Con el inspecionador de elementos puedo ir verificando las alturas de todos los elemetos de mi archivo html y saber donde se encuentra el posible error que hace que un estilo CSS no se vea como nosotros queremos.
+Con el inspecionador de elementos puedo ir verificando las alturas de todos los elemetos de mi archivo HTML y saber donde se encuentra el posible error que hace que un estilo CSS no se vea como nosotros queremos, recientemente me paso con un div y su contenido se desbordaba resulta que le habia asignado un heigth:100px; a una clase que se encontraba dentro de esta y que estaba probocando dicho desbordamiento.
+
+La propiedad de CSS overflow especifica qué hacer cuando los elementos se desbordan de un contenedor con tamaño fijo como podría ser un div.
+overflow: visible # por default son visibles los elementos que sobrepasan el tamaño del contenedor
+overflow: hidden # se cortan donde termina el contenedor
+overflow: scroll # agrega barras de scroll para poder desplazarse
+overflow: auto # lo deja a decisión dell navegador
+
 
 
 
