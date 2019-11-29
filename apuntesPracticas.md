@@ -303,6 +303,7 @@ overflow: hidden # se cortan donde termina el contenedor
 overflow: scroll # agrega barras de scroll para poder desplazarse
 overflow: auto # lo deja a decisión dell navegador
 
+esto me ayudo a entender mejor el position http://es.learnlayout.com/position.html
 
 Ctrl + Mayus + K = Eliminar linea de código
  Que no te confundas con las propiedades como width y heigth ya me paso jajajaja
@@ -312,9 +313,17 @@ Para poner varias clases dentro de un elemento solo hace falta separarlas con un
 El formato SVG (Scalable Vectors Grafics) es aquel el cual no importa cuanto le modifique su tamaño, este no va perder su resolución. Siendo esto porque usa vectores en vez de pixeles para dibujar en pantalla.
 
 
+Recuerda que display: flex; solo afecta a los hijos directos, por lo que si incluimos un div dentro de otra etiqueta habra que hacer que se herede esta propiedad. La ubucación de los elementos es muy importante.
+
+Me di cuenta que el borde solido de color rojo se usa para poder ver todo el espacio que comprende dicho elemento y poder guiarnos para acomodarlo de uno u otra forma, lo que llaman depurar estilos.
+
+.elNombredelaClase + tab hace que se cree un div con el nombre de la clase que se a espesificado.
 
 
-
+Hay múltiples opciones para tener una web estatica, acá te dejo tres clases en las que te enseñan a hacer deploys estáticos de tus páginas en diferentes plataformas:
+*****now.sh
+*****github
+*****surge.sh
 
 
 
