@@ -292,6 +292,8 @@ La letra por defecto en los navegadores dentro de etiquetas con contenido de tex
 ES MUY IMORTANTE QUE TODO QUEDE BIEN ESCRITO PARA QUE NO LA LIES MAS ADELANTE CUANDO EL CODIGO SE HAGA MAS EXTE NSO
 
 Para centrar algo horizontalmente en navegadores modernos, usa display: flex; justify-content: center; 
+Si tengo un elemento con display flex y flex-direction column ¿Con qué propiedad centro su contenido verticalmente?
+El primero de estos métodos es “vertical-align”, que no siempre funcionará, pero nos ayudará a comprender mejor el centrado vertical en general.
 
 Con el inspecionador de elementos puedo ir verificando las alturas de todos los elemetos de mi archivo HTML y saber donde se encuentra el posible error que hace que un estilo CSS no se vea como nosotros queremos, recientemente me paso con un div y su contenido se desbordaba resulta que le habia asignado un heigth:100px; a una clase que se encontraba dentro de esta y que estaba probocando dicho desbordamiento.
 
@@ -300,6 +302,16 @@ overflow: visible # por default son visibles los elementos que sobrepasan el tam
 overflow: hidden # se cortan donde termina el contenedor
 overflow: scroll # agrega barras de scroll para poder desplazarse
 overflow: auto # lo deja a decisión dell navegador
+
+
+Ctrl + Mayus + K = Eliminar linea de código
+ Que no te confundas con las propiedades como width y heigth ya me paso jajajaja
+
+Para poner varias clases dentro de un elemento solo hace falta separarlas con un espacio dentro del mismo atributo class=""
+
+El formato SVG (Scalable Vectors Grafics) es aquel el cual no importa cuanto le modifique su tamaño, este no va perder su resolución. Siendo esto porque usa vectores en vez de pixeles para dibujar en pantalla.
+
+
 
 
 

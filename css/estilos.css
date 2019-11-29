@@ -231,3 +231,60 @@ figure {
   text-decoration: none;
   border-radius: 5px;
 }
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: 	flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  /* border: 1px solid red; */
+}
+.social-link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  /* border: 1px solid white; */
+  background-size: 50px 50px;
+}
+.social-link.twitter /*puedo poner varias clases segidas de esta forma*/ {
+  background-image: url('../img/twitter.svg');
+}
+.social-link.facebook {
+  background-image: url('../img/facebook.svg');
+}
+.social-link.github {
+  background-image: url('../img/github.svg');
+}
+.social-link.instagram {
+  background-image: url('../img/instagram.svg');
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 45px;
+  background: url('../img/envelope.svg') 15px 15px no-repeat white; /*junto a esto coloque el background-size y luego de las medidas background-repeat*/
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button {
+  display: block;
+  margin-top: 8px;
+  background: transparent;
+  color: white;
+  padding: 10px 30px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  /*margin: 10px auto 0; 10px arriba, auto derecha e izquierda, 0 abajo*/
+}
+.form-email h3 {
+  font-family: "Source Sans Pro", sans-serif;
+}
