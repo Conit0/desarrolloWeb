@@ -54,14 +54,18 @@ h1 strong {
 }
 
 .hero {
+  /* background: url("../img/hero.jpg"), #1b2127; */
+  /*background-size: 500px 300px;
   height: 300px;
-  background: url("../img/hero.jpg"), #1b2127;
-  /* background-color: #1b2127; */
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position-x: right;
+  background-repeat: no-repeat; 
+    background-position-x: right;*/
   display: flex; /*Esto hace que el elemento se ubique dentro del alto que se le asigno*/
+  background-color: #1b2127;
   align-items: center;
+  justify-content: space-between;
+}
+.hero-image {
+  object-fit: cover; /*redimenciona la imagen para que no se vea tan fea*/
 }
 
 .portfolio {
@@ -188,17 +192,12 @@ figure {
 }
 .footer img {
   vertical-align: middle; /*Centro el texto dentro del eje Y*/
+  justify-content: space-between;
 }
 .footer a {
   color: white;
 }
 
-.event-list-title {
-  margin-left: 20px;
-}
-.event-list {
-  display: flex; /*Esto se aplica al elemento padre para que sus elemetos hijos adquieran la propiedad*/
-}
 .event {
   /* border: 1px solid red; */
   margin: 10px;
@@ -207,6 +206,13 @@ figure {
   border-radius: 10px;
   overflow: hidden; /*Cuando un elemento se desborde del elemmto .event se va a ocultar*/
   background: #f4fbff;
+}
+.event-list-title {
+  margin-left: 20px;
+}
+.event-list {
+  display: flex; /*Esto se aplica al elemento padre para que sus elemetos hijos adquieran la propiedad*/
+  flex-wrap: wrap; /* Es como un ajuste de línea para que los elementos bajen en vez de segir y generar scrollbar */
 }
 .event img {
   width: 480px;
@@ -287,4 +293,14 @@ figure {
 }
 .form-email h3 {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+.wrapper {
+  /* border: 1px solid red; usado para depurar los estilos */
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  flex-wrap: inherit;
 }
