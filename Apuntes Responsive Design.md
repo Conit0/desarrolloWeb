@@ -106,22 +106,71 @@ Viewport es el área visible de la patalla en el navegador, al hacer la pantalla 
 
 No perder la lecturibilidad del sitio web, para empezar a forzar estos escalados dentro del sitio web existe la etiqueta de metadatos llamada viewport, para que el contenido no escale según los tamaños que le he definido, sino que escale según los tamaños del dispositivo.
 
+<meta name="viewport" content="">
 Tenemos la equiqueta metadatos, recibe el atributo name="tipo de dato que va a maniular este meta dato, en este caso <<viewport>>", ahora manipularemos el tamaño que tendra mi contenido cuando se va a ver dentro de mi dispositivo content="width" o "initial-scale" o "maximum-scale"
 	"width=320" esta medida solo maneja la únidad px por lo tanto no es necesario agregarla. Esto puede resultar algo arbitrario.
 	"width=device-width" en este caso el ancho sera igual al ancho de mi dispositivo
-	"width=device-width, initial-scale=1" con una coma separamos el segundo parametro que vamos a ingresar initial-scale= aquí agrego valores desde 0 a 1 donde cero es el 0% y uno el 100%, los numeros negativos (-1,-2...) serian el zoom out y los positivos (1,2...) zoom in.
+	"width=device-width, initial-scale=1" con una coma separamos el segundo parametro que vamos a ingresar initial-scale= aquí agrego valores desde 0 a 1 donde cero es el 0% y uno el 100%, los numeros negativos (-1,-2...) serian el zoom out y los positivos (1,2...) zoom in, como su nombre lo dice me esto dara la escala inicial que tendra mi página en su primera carga.
 
 En ocaciones el cache queda guardado dentro de las herramientas de desarrollador (developers tools) por lo que es necesario en ocaciones cerrarlo y recargar la página para que aparescan los cambios.
-<meta name="viewport" content="">
 
+Comentario:::::=====>
+Metadatos(Meta):
+Los metadatos son datos (información) sobre datos.
+La etiqueta <meta> proporciona metadatos sobre el documento HTML. Los metadatos no se mostrarán en la página, pero se analizarán por máquina.
+Los metaelementos se usan generalmente para especificar la descripción de la página, las palabras clave, el autor del documento, la última modificación y otros metadatos.
+Los metadatos pueden ser utilizados por los navegadores (cómo mostrar contenido o recargar la página), motores de búsqueda (palabras clave) u otros servicios web.
+HTML5 introdujo un método para permitir que los diseñadores web tomen el control de la ventana gráfica (el área visible del usuario de una página web), a través de la etiqueta <meta>.
 
+Comentario:::::=====>
+Info del tag para su mejor comprención
+https://www.htmlcinco.com/etiqueta-meta-viewport-web-movil/
+https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag
 
+Comentario:::::=====>
+width=device-width para que se adapte según la pantalla del dispositivo
+initial-scale=1.0 para indicar el escalado según el dispositivo
 
+#6
+La propiedad de de medida em establece un tamaño para la letra según la referencia de la medida padre, si esta llega a ser una propiedad em que adopto la medida en px de un padre el valor para el siguiente em sera el de su em padre, en el caso de que en alguna etiqueta hija de uno de estos em se estableciera el tamño de la funte aprtir de allí cambiaria la medida para los sigientes elementos.
 
+<nav> font-size: 16px;
+  <ul> font-size: 2em; <!--esto equivale a 32px-->
+   <li> font-size: 1em; <!-- este equivale a 632px -->
+     <a href=""> hola! </a> font-size: .5em;  padding: 2em <!-- para este caso .5em equivale a 16px, mientras el em de padding es de 32px ya que se establecio en la etiqueta <<a>> el tamaño de la letra por defecto la siguente propiedad <<em>> partira desde ese tamaño establecido-->
+   </li>
+  </ul>
+</nav>
 
+la propieda <<rem>> toma el tamaño de la fuente del ancestro más lejano (html o body), si llegaramos a cambiar el valor cambiarián el resto de propiedades.
+<!DOCTYPE html> 
+<html lang="en">font-size: 32px; <!-- aquí estableceremos la medida general para todo el documento -->
+<head></head>
+<body> font:size: 16px;
+  <ul> font:siz: 2rem; <!-- aquí la propiedad <<rem>> equivale a 64px -->
+    <li> font-size: 1rem; <!-- equivale a 32px -->
+      <a href=""></a> font-size: .5rem; <!-- equivale a 16px -->
+    </li>
+... aquí van las etiquetas de cierre jajajja
 
+enlaces:::::::::===>
+https://franciscoamk.com/unidades-de-medida-en-css/
 
+Comentario:::::=====>
+/* 1em = 16px , 2em =32px , 4em= 128px (em siempre tomara el valor de la anterior medida relativa) 
+1rem =32px , 4rem= 128px , 6rem= 192px (rem siempre tomara el valor de la primera unidad relativa que comúnmente se encuentra  on el body o en el html) */
 
+Comentario:::::=====>
+Una manera de verlo, es pensar los rem como una variable, si le declaras al body por ejemplo un fontSize de 20px, a partir de ahí tu “variable” rem es igual a 20px, no importa donde lo utilices. Y si después quieres modificar el valor del rem, solo lo cambias en un solo lugar.
 
-
-
+Comentario:::::=====>
+Lo primero que debes tener en cuenta es que estas medidas son maleables, en la medida en que dependen de su fuente de origen o medida madre. Entre ellas se encuentran el porcentaje (longitud referente al tamaño de los elementos padre), los em (unidad relativa al tamaño de fuente especificada más cercano), los rem (unidad relativa al tamaño de fuente especificada en el ancestro más lejano, como html o body) y tamaños del viewport vw/vh (longitud relativa porcentual con respecto al viewport).
+.
+Medidas útiles en Responsive Design
+.
+- %: Porcentaje, se mide en referencia a la longitud de los elementos padres, por lo que abarcara simpre el porcentaje de los tamaños ya especificados o por defecto.
+- em: Unidad relativa al tamaño de fuente más cercana, la fuente más cercana corresponde primero al elemento mismo, sino lo hace con el elemento padre mas cercano que tenga fuente definida y donde 1em corresponde a ese tamaño de fuente.
+- rem: Unidad relativa al tamaño de fuente más lejana (html o body).
+- vw/vh: Unidad relativa conceptual en relación al Viewport (área visible del navegador) y estas solo se van a modificar cuando hagamos resize (cambiar el tamaño de la ventana)
+           * 100 vw: 100% del width con respecto al Viewport actual.
+           * 100 vh: 100% del height con respecto al Viewport actual.
