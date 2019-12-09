@@ -28,8 +28,8 @@ Landscape (paisaje): horizontal
 
 Técnicas para abordar el Responsive Desing:
 Mobile first: si empiezas un websit desde la menor resolución soportada hasta la mayor
-Desktop first: si empiezas un websit desde la mayor resolución soportada hasta la menor
-¿Cúal es mejor?: Técnicamente Mobile First por posicionamiento de SEO para los clientes que navegan en nuestro sito por medio de dispositivos móviles ¿Cómo accederan los usuarios a tu contenido? por medio de google analytics sabras por donde te llegan más usuarios.
+Desktop first: si empiezas un websit desde la mayor resolución soportada hasta la menor, empieza por la resolución más grande (Media Queri)
+¿Cúal es mejor?: Técnicamente Mobile First por posicionamiento de SEO para los clientes que navegan en nuestro sito por medio de dispositivos móviles ¿Cómo accederan los usuarios a tu contenido? por medio de google analytics sabras por donde te llegan más usuarios. Con el empiezas DESDE el tamaño minimo de pantalla hasta los más grande con ello la tendras más fácil pues las pantallas tienden a ser más amplias cada vez.
 
 Un par de librerias:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -174,3 +174,43 @@ Medidas útiles en Responsive Design
 - vw/vh: Unidad relativa conceptual en relación al Viewport (área visible del navegador) y estas solo se van a modificar cuando hagamos resize (cambiar el tamaño de la ventana)
            * 100 vw: 100% del width con respecto al Viewport actual.
            * 100 vh: 100% del height con respecto al Viewport actual.
+
+#7
+Media queries permiten adpatar la representación del contenido a características del dispositivo.
+
+@media  Un_media_type and (condicion(s)) {
+}
+
+@media screen and (max-width: 768px) {
+} //Todas la pantallas con un ancho inferior o igual 768px cumplen esta condición.
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+} //Todas las pantallas con un ancho de 480px hasta 768px cumplen esta condición.
+
+min-width = DESDE
+max-width  = HASTA
+
+Se usa regularmente el tipo SCREEN pero en ocaciones también se usa PRINT para imprimir el web-site, se imprime algo como un screen-shot por lo que el contenido suele adaptarce pues en cuanto a impresión se busca ahorrar tinta y ocultar los backgrounds que no estan permitidos dentro de los tipos de medios para impresión.
+
+enlaces:::::::::======>
+https://themeover.com/mobile-first-vs-desktop-first-responsive-design/
+https://css-tricks.com/totally-forgot-print-style-sheets/ se puede ahondar más sobre el @media print, además muestra que desde el inspector de Chrome se pueden emular los media queries que tenga el proyecto!
+
+comentario:::::======>
+all | Valor por defecto, usada por todos los tipos de media
+print | Utilizado para impresoras
+screen | Se utiliza para pantallas de ordenador, tabletas, teléfonos inteligentes, etc.
+speech | Se utiliza para lectores de pantalla que “lee” la página en voz alta
+@media all and (condición) {}
+@media print and (condición) {}
+@media screen and (condición) {}
+@media speech and (condición) {}
+
+#8
+Podemos incluirlos dentro de una hoja de estilos aparte y dentro de la etiqueta <<style>>. 
+Para usar desktop first empieza por la resolución más amplia, usa los estandar de las resoluciones de pantallas que actualmente abarcan el mercado.
+
+enlaces:::::::::::::::::====>
+https://developer.mozilla.org/es/docs/CSS/Media_queries
+
+comentario:::::======>
