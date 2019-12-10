@@ -210,7 +210,35 @@ speech | Se utiliza para lectores de pantalla que “lee” la página en voz alta
 Podemos incluirlos dentro de una hoja de estilos aparte y dentro de la etiqueta <<style>>. 
 Para usar desktop first empieza por la resolución más amplia, usa los estandar de las resoluciones de pantallas que actualmente abarcan el mercado.
 
+@media screen and (max-width: 768px) {
+  body {
+    border: 10px solid green;
+  }
+}  //Trazar una línea nos ayuda testear nustros estilos de @media
+
 enlaces:::::::::::::::::====>
 https://developer.mozilla.org/es/docs/CSS/Media_queries
+https://developers.google.com/web/fundamentals/performance/http2/?hl=es
+
+Rositorio del curso:::::
+https://github.com/LeonidasEsteban/responsive-design-portafolio
+
+#9
+Para hacer que la página sea responsiva hay que empezar a quitar los valores fijos que hayamos definido, añadir la propiedad de flex-wrap: wrap; para que los elementos se apilen uno sobre otro cuando el viewport sea vea reducido.
+
+enlaces:::::::::::::::::====>
+https://flexboxfroggy.com/#es
+Acá podemos apreciar a Bruce Lee hablando sobre el diseño responsivo y como debe de funcionar en distintos dispositivos para nuestros usuarios:
+https://www.youtube.com/watch?v=cJMwBwFj5nQ
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 
 comentario:::::======>
+Flex-wrap es una propiedad de flexbox, bootstrap 4 ya viene con flexbox dentro de sus propiedades, con bootstrap no tienes que manejar flex-wrap como tal, si lo manejas, lo recomendable es que lo hagas con la sintaxis de bootrstrap, en lo personal prefiero usar grid layout y flexbox, queda mas rapida la pagina y es igual funcional, aunque si puedes llegar a sacrificar velocidad de implementación
+
+Bootstrap es un framework front end. bootstrap no es de html, ni de css ni de javascript, pero si las utiliza para facilitarte las cosas de tal manera que sea mas rapido la codificación de tus interfaces, entonces tu decides si usas bootstrap o grid, ya que bootstrap maneja su propio sistema de grillas, en lo personal prefiero no implementar estos tipos de framework por performance de mis productos.
+
+comentario:::::======>
+Max-width y flex-wrap
+Se deben retirar los elementos tipo “contenedor” de tamaños fijos a tamaños variables.
+La propiedad flex-wrap es fundamental para este tipo de practicas adaptables, puesto que con el valor de ‘wrap’ los elementos no se comprimen en anchos pequeños, sino que al contrario pasan a una nueva línea.

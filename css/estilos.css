@@ -63,6 +63,7 @@ h1 strong {
   background-color: #1b2127;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-image {
   object-fit: cover; /*redimenciona la imagen para que no se vea tan fea*/
@@ -92,6 +93,7 @@ h1 strong {
   display: flex; /*Me permite tener un elemento al lado de otro*/
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-course,
 .project-date,
@@ -129,6 +131,7 @@ h1 strong {
   height: 70px;
   align-items: center; /* Centro el contenido verticalmente */
   justify-content: space-between; /*Centro el contenido horizontalmente*/
+  flex-wrap: wrap;
   /* Fijar cabecera mas otra propiedad que esta en el body
   width: 100%; hacemos que la cabecera ocupe el ancho completo de la página
 	left: 0;  Posicionamos la cabecera al lado izquierdo
@@ -189,6 +192,7 @@ figure {
   background-color: #1b2127;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer img {
   vertical-align: middle; /*Centro el texto dentro del eje Y*/
@@ -245,6 +249,7 @@ figure {
   display: 	flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social {
@@ -297,7 +302,7 @@ figure {
 
 .wrapper {
   /* border: 1px solid red; usado para depurar los estilos */
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   align-items: inherit;
@@ -313,7 +318,7 @@ figure {
 
 @media screen and (max-width: 768px) {
   body {
-    border: 10px solid green;
+    /* border: 10px solid green; */
   }
 }
 
