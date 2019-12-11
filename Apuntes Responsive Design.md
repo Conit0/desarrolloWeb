@@ -93,8 +93,21 @@ Medidas absolutas y relativas(estas varían según la condición), optimización, ca
 
 Te recomiendo que uses esto, lo deja muy bonito sin importar la imagen de fondo:  text-shadow: 1px2px2px#000;
 
+enlaces::::::::::::==========>
 Hosting gratuito sencillo de optener con una interfaz muy intuitiva:
 https://www.000webhost.com/
+Link con el portafolio (Proyecto):
+https://github.com/LeonidasEsteban/responsive-design-portafolio-preview
+
+comentario::::::::======>
+Mi opinión sobre el menú hamburguesa
+El usuario identificará el menú hamburguesa, pero lo usará solamente si tiene mucha intención, es más recomendable mostrar los menús siempre visibles, el menú hamburguesa lo recomiendo para contenido de tu website que tenga poca prioridad en tu sitio.
+Ésto tiene varias razones de ser:
+1. Los usuarios nevegan con el pulgar y la parte más lejana del dispositivo es la parte superior izquierda, donde se localiza el menú hamburguesa.
+2.  por interés, normalmente al usuario no le interesa tu sitio y navega a ciegas, por lo que darle click a un botón para abrir un menú, realmente no le llama la atención (aunque sepa cómo se hace)
+3. El más importante es que si quieres hacer un botón que sea clickeado es mejor poner la interacción en contexto, que salga el botón cuando más lo necesite el usuario
+Si vas a utilizar un menú hamburguesa, plantéate cambiarlo por un menú de tabs (máximo 5 opciones), ésto para mostrarle las opciones y evitarle fricciones al usuario (a menos que tu intención sea que sólo usuarios súper interesados usen tu menú, que a veces es lo que se busca, por ejemplo, en facebook), aunque la mejor opción siempre será mostrar de manera contextual tus interacciones.
+
 
 #4
 Dentro del inspector de elementos puedes elegir la vista como si fuera un dispossitivo móvil (F12 luego CTRL + SHIFT + M) ademas de poder elegir el tamaño dependiendo de la marca de los celulares más usados, o de un tamaño por defecto que tu definas, puedes elegir el zoom que tendra esa pantalla que acabas de generar, la orientación de la pantalla y si el estado de la red de ese dipositivo, en une menu apartado que es coformado por tres puntos sobre el mismo contenedor de las demas opciones podemos mostrar unas reglas para medir el sitio, permite mostrar los mediaQuerys que tenga el sitio mostrando el tamaño exacto donde el contenido se empieza a modificar por su reponsividad, tiene la opción de tomar un screenshot completo o parcial del viewport de la página conforme también con la resolución que hayas establecido (esto resulta útil para mostrar dentro de un equipo de trabajo o a un cliente cómo va el proyecto, qué avances a tenido visualmente), por último esta una opción para restaurar a los valores por defecto de este curioso menú. Un doble clic sobre el recuedro que comprende el viewport para hacer un zoom.
@@ -242,3 +255,51 @@ comentario:::::======>
 Max-width y flex-wrap
 Se deben retirar los elementos tipo “contenedor” de tamaños fijos a tamaños variables.
 La propiedad flex-wrap es fundamental para este tipo de practicas adaptables, puesto que con el valor de ‘wrap’ los elementos no se comprimen en anchos pequeños, sino que al contrario pasan a una nueva línea.
+
+
+#10 y 11
+Para comenzar a trabajar en el diseño responsivo por partes podemos comentar la parte del documento HTML  que no trabajaremos durante ese proceso hasta que completemos la sección a la que deseamos dar vida resposive. En algunos casos tendras uno que otro comentario por allí, así que para hacer un comentario de cierto contenido que seleciones y deseas hacerlo por medio de shortcut del editor tendras algunos incovenientes con estos comentarios que tengas.
+
+Adicional: el back slash nos permite ecapar algún signo reservado de HTML como el signo mayor que >
+
+Usaremos la opción: show media queries, esto nos mostrara en la parte supuerior las medidas que definimos para esos media queries en el archivo CSS, puedes jugar con el zoom de la vista y revisar si el navegador no tiene ya uno aplicado por defecto para todas las páginas.
+
+max-width: 1000px; los elemento ocuparan un ancho máximo de 1000px, pero eso depende de sus hijos por que si sus hijos tienen menos tamaño de esos 1000px juntos quiere decir que el contenedor también tendra menos tamaño.
+Si a esto le agregamos un width: 100%; podemos lograr que el contenedor se adapte a ese ancho máximo. Otra alternativa a este width: 100%; es utilizar cosas de flex, flex: 1; (flex-grow + flex-shrink) que al igual que width: 100%; tomara todo el ancho disponible, con la diferencia que en caso de colocar un padding no tendriamos el problema de que ese ancho máximo aumentara.
+
+para un max-width: 768px (que es la resolución de un ipad) esto quiere decir que hasta esa resolución la pantalla se vera así, y para resoluciones más bajitas que el ipad restamos un píxel.
+
+Para el selector usaremos la proiedad <<height>> con el valor <<auto>> no serviran dentro de Responsive Desing para resetear valores.
+
+Sal del inspecionador de elementos, recarga la página y vuelve a ella para visualizas los cambios, es posible que el cache se almacene dentro del inspector y no muestre los cambios que hemos generado.
+
+enlaces:::::::::::::::::====>
+https://caniuse.com/
+https://developer.mozilla.org/es/docs/Web/CSS/:nth-child
+
+comentario:::::======>
+La propiedad flex puede recibir tres parámetros:
+flex-grow: Define la capacidad de crecer de un elemento. El valor por defecto es 0, si se le coloca 1 entonces va a intentar tomar todo el espacio disponible.
+flex-shrink: Define la capacidad que tiene el elemento de encogerse. El valor por defecto es 1.
+flex-basis: Define el tamaño predeterminado del elemento antes de ser distribuido en el espacio restante.
+
+comentario:::::======>
+nth-child es una pseudo instrucción usada para acceder a hermanos en especifico, ya que tal vez quiero darle algunas propiedades a unos elementos, más no a todos, en esa sección dije que en la clase 
+Puedes leer más sobre eso en la siguiente página.
+https://developer.mozilla.org/es/docs/Web/CSS/:nth-child
+
+comentario:::::======>
+me parece que hay muchos cambios y eso lleva que sean muchas lineas para los media queries(son casi el doble de los estilos utilizados en la pagina normal) ¿sera posible desde el momento de la maquetacion de la pagina, ponerlos de una menera diseñada para poder realizar mínimos cambios posibles para hacerlo adaptable?
+
+Saludos, si, asi es, lo ideal es que los estilos generales del sitio web los coloques fuera de los media queries, siempre y cuando estos sean los mismos en las versiones responsive, yo te recomiendo que en los estilos generales coloques todo en relacion a los colores, tipo de fuentes, ancho y alto de los elementos en % y automatico casi siempre y en los media usa todo relacionado a las tamaños de letras, a la distribución del contenido, a los cambios de display etc, como dice el profesor leonidas, mientras menos estilos en los queries quiere decir que tu sitio web es mas elastico, flexible y facil de mantener.
+
+comentario:::::======>
+Ajustar header
+Anotaciones:
+No Es recomendable ajustar el ancho del contenedor del header variable con un width de 100%, puesto que este valor se suma aun mas cuando agregamos relleno al elemento, por lo que seria mas recomendable usar una propiedad flexbox que fusiona al flex-grow junto con flex-shrink, la cual se llama solo flex, con un valor de 1 y esto arregla el problema de ocupar todo el ancho disponible.
+El ipad tiene un ancho fijo de 768 px
+El valor ‘auto’ funciona mucho para el responsive design a la hora de resetear valores.
+Ej: height: auto;
+Es recomendable para pantallas inferiores al ipad, configurar el display del header como block.
+El valor de initial es recomendable para volver a asignar el valor por defecto que tenia el elemento.
+
