@@ -258,7 +258,7 @@ La propiedad flex-wrap es fundamental para este tipo de practicas adaptables, pu
 
 
 #10 y 11
-Para comenzar a trabajar en el diseño responsivo por partes podemos comentar la parte del documento HTML  que no trabajaremos durante ese proceso hasta que completemos la sección a la que deseamos dar vida resposive. En algunos casos tendras uno que otro comentario por allí, así que para hacer un comentario de cierto contenido que seleciones y deseas hacerlo por medio de shortcut del editor tendras algunos incovenientes con estos comentarios que tengas.
+Para comenzar a trabajar en el diseño responsivo por partes podemos comentar la parte del documento HTML  que no trabajaremos durante ese proceso hasta que completemos la sección a la que deseamos dar vida resposive, o bien comentarlo por secciones e ir descomentado según convenga. En algunos casos tendras uno que otro comentario por allí, así que para hacer un comentario de cierto contenido que seleciones y deseas hacerlo por medio de shortcut del editor tendras algunos incovenientes con estos comentarios que tengas.
 
 Adicional: el back slash nos permite ecapar algún signo reservado de HTML como el signo mayor que >
 
@@ -302,4 +302,56 @@ El valor ‘auto’ funciona mucho para el responsive design a la hora de resetear v
 Ej: height: auto;
 Es recomendable para pantallas inferiores al ipad, configurar el display del header como block.
 El valor de initial es recomendable para volver a asignar el valor por defecto que tenia el elemento.
+
+#12
+Usamos porcentajes para que las dimenciones de nuestra página se ajuste mejor, en el caso de elemtos que compartan un espacion horizontal distrubuiremos el 100% entre los dos.
+
+Es mucho mejor usar anchos automaticos y vistas en bloque para mejorar el renderizado de la página, cuando una imagen este en un viewport más chico hara rezise automticamente.
+
+Dentro de los media queries haremos que los tamaños de fuente sean relativos, para ello usaremos los em.
+
+Usar display con valor block para en las media queries, en el momento que la página adquiera ese tamaño obtendra ese valor.
+
+Setear: asignar un valor prederminado.
+Los margenes también deben ser variables los pondremos en em para que aspu sean relativos. Con esto conseguiremos reducir el espacio entre los textos al tener menos espacio en el viewport.
+Así iremos ajustando proporcionalmente la página.
+
+enlaces:::::::::========>
+https://www.ionos.mx/digitalguide/paginas-web/diseno-web/tipografia-para-el-diseno-responsivo-con-css
+https://www.imaginanet.com/blog/minmaxing-aprendiendo-vmin-y-vmax-en-css.html
+https://desarrolloweb.com/articulos/funciones-recursivas-recursividad.html
+De acuerdo con este artículo, el tamaño de fuente ideal es aquel que permite colocar entre 7 y 13 plabras por línea:
+Usar tipografía en tiempos de diseño responsive
+https://platzi.com/blog/tipografia-responsive/
+
+comentario:::::::::======>
+Puedes usar cualquier unidad medida, pero el uso de unidades de medida relativas como em o rem te facilitará el cambio de tamaño de fuente como lo desees para cada breakpoint.
+El valor de la unidad em es dinámico, y equivale al valor que tenga su elemento padre.
+El valor predeterminado del navegador a menudo es de 16px. Entonces, por defecto 1em = 16px y 2em = 32px.
+Lo que Leonidas hizo fue establecer el font-size usando em, siguiendo el diseño de la version desktop, sin cambiar el valor predefenido de la fuente que es 16px, para que en el breakpoint de 480 solo declarará la font-size: 12px; (en este punto 1em = 12px) y así automáticamente se redujera el tamaño de las las fuentes siguiendo el diseño original.
+
+comentario::::::::=======>
+Siempre es mejor tener las cosas en diplay: block y en width: auto porque da mucho mejor rendimiento en el render del navegador. (Es mejor el ancho auto que ancho 100%… ¡Toda la vida!)
+replica:::: diserto un poco de esto pues mejoran el render al colocarlos dentro de los media queries y no en la página en tamaño de escritorio donde sera necesario que el display sea flex
+
+comentario::::::::====>
+Esta es una excelente línea de codigo en CSS, mediante calc, calculamos el ancho de la fuente dependiendo del viewport. Donde 19 es el tamaño maximo, en desktop y 14 es el minimo para pantallas pequeñas. Lo mas interesantes es que sus valores varian segun su viewport, osea que toma todos los valores entre 14 y 19
+font-size: calc(14px(valor minimo) + (19(valor máximo) - 14) * ((100vw - 300px) / (1600 - 300)));
+
+comentario::::::::::::=======>
+Pasos para hacer imagenes responsive:
+I. En los estilos generales
+a. Declarar el width de la imagen y el max-width: 100%;
+b. Declarar el width del contenedor de la imagen en medidas relativas
+II. En la Query
+a. Declarar el width: auto en el contenedor de la imagen.
+Pasos para hacer textos responsive:
+I. En la Query
+a. Declarar un font-size en px al elemento que contiene todos los textos, el cual servirá como guía para el em
+b. Declarar los em para cada texto en la primera query
+NOTA
+a. Al darse la necesidad de redimensionar los tamaños del texto en otra query (o la proxima) el único valor que se deberá cambiar para que todos los textos configurados relativamente se adapten automaticamente es el font-size del contenedor previamente declarado en pixeles.
+
+
+
 
