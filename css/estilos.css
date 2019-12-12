@@ -201,6 +201,7 @@ figure {
 .footer img {
   vertical-align: middle; /*Centro el texto dentro del eje Y*/
   justify-content: space-between;
+  width: 13%;
 }
 .footer a {
   color: white;
@@ -319,7 +320,9 @@ figure {
 /* desktop first, para este comienza desde la Media Querr más grande */
 
 @media screen and (max-width: 1024px) {
-
+  .wrapper {
+    padding: 0 1em;
+  }
 }
 
 /* Un pixel más abajo del Ipad */
@@ -389,6 +392,25 @@ figure {
   .event-detail {
     margin: 2em .5px .5px;
     padding: 1em;
+  }
+
+  .contact {
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+  }
+  .form-email button {
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    /* padding: 1px; con este logramos lo del la línea de abajo */
+    border: 1px solid transparent;
   }
 }
 

@@ -375,3 +375,22 @@ Anotaciones:
 Cuando hay unidades de márgenes o relleno, es recomendable hacer la sumatoria al momento de ajustar porcentajes a las unidades de ancho. Ejemplo: 48% width (para repartir entre 2 elementos), mas 1% de margin, que en total sumarian 48% + 48% + 1% + 1% +1% +1%.
 Cuando agregamos una medida a un selector hijo de etiqueta, y queremos hacer una configuración posterior pero con el selector de clase, el selector de etiqueta prevalece y vale más, por lo que se debe hacer la reconfiguración con el selector de etiqueta.
 Ej: .event-image valdra en este caso menos que .event img
+
+
+#14
+Para saber cuanto vale un em que hayas definido ve al medelo de caja donde se asigno ese valor y allí veras las medidas.
+
+display: flex; en algunas ocaciones, sino es que en todas, arruina el modelo de caja, se ve la necesidad de resetearlo dentro de media queries.
+
+Ver proporciones por medio del inspector del elementos y como los elementos van encajando bien dentro del tamaño de viewport que tienes disponible.
+
+enlaces::::::::======>
+emojis en HTML:
+https://steemit.com/spanish/@rojassartorio/emojis-muy-pro-para-steemit
+https://emojipedia.org/
+https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
+resúmenes de Minei Toshio:
+https://github.com/MineiToshio/CursosPlatzi/tree/master/Curso de Responsive Design
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+
+
