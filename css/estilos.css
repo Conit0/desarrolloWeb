@@ -208,8 +208,8 @@ figure {
 
 .event {
   /* border: 1px solid red; */
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden; /*Cuando un elemento se desborde del elemmto .event se va a ocultar*/
@@ -371,11 +371,24 @@ figure {
   .project-descripton {
     font-size: 8em;
   }
+
+  .event {
+    width:auto;
+    flex-shrink: initial; /*O puede quitarlo de allá ariba donde esta el elemnto padre*/
+  }
+  .event img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .project-details{
     font-size: 12px;
+  }
+
+  .event-detail {
+    margin: 2em .5px .5px;
+    padding: 1em;
   }
 }
 

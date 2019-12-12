@@ -352,6 +352,26 @@ b. Declarar los em para cada texto en la primera query
 NOTA
 a. Al darse la necesidad de redimensionar los tamaños del texto en otra query (o la proxima) el único valor que se deberá cambiar para que todos los textos configurados relativamente se adapten automaticamente es el font-size del contenedor previamente declarado en pixeles.
 
+#12
+Revisamos como se ve el diseño en nuestra visión general, prueba con el inspector de elementos a quitar o añadir propiedades y valores.
 
+Si un elemento de CSS tiene una clase y una etiqueta (.event img) pero antes le puse un estilo directamente a la etiqueta (img) la etiqueta tendra la prioridad.
 
+Breakponit = punto de ruptura
 
+margin: 10px(arriba) 10px(derecha) 10px(abajo) 10px(izquierda)
+margin: 5%;                /* 5% para todos los lados */
+margin: 10px;              /* 10px para todos los lados */
+margin: 1.6em 20px;        /* 1.6em arriba y abajo, 20px izquierda y derecha */
+margin: 10px 3% 1em;       /* 10px arriba, 3% izquierda y derecha, 1em abajo */
+margin: 10px 3px 30px 5px; /* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
+margin: 1em auto;          /* 1em arriba y abajo, centrado horizontalmente */
+margin: auto;              /* 0px de margen vertical, centrado horizontalmente */
+
+Mediante el inspector de elementos, podemos revisar si determinado elemento tiene una propiedad, para ello nos situamos sobre la pestaña <<computed (disposición)>> que esta de segundas junto a <<styles (estilos)>> allí podremos realizar la consulta y saber si el elemento cuenta con dicha propiedad.
+
+comentario::::::::======>
+Anotaciones:
+Cuando hay unidades de márgenes o relleno, es recomendable hacer la sumatoria al momento de ajustar porcentajes a las unidades de ancho. Ejemplo: 48% width (para repartir entre 2 elementos), mas 1% de margin, que en total sumarian 48% + 48% + 1% + 1% +1% +1%.
+Cuando agregamos una medida a un selector hijo de etiqueta, y queremos hacer una configuración posterior pero con el selector de clase, el selector de etiqueta prevalece y vale más, por lo que se debe hacer la reconfiguración con el selector de etiqueta.
+Ej: .event-image valdra en este caso menos que .event img
