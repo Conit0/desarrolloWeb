@@ -323,10 +323,47 @@ figure {
   .wrapper {
     padding: 0 1em;
   }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
 }
 
 /* Un pixel más abajo del Ipad */
 @media screen and (max-width: 767px) { 
+  .hero {
+    height: auto;
+    position: relative;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
+
   .header {
     display: block;
     height: auto;
@@ -385,6 +422,9 @@ figure {
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
   .project-details{
     font-size: 12px;
   }
@@ -415,5 +455,10 @@ figure {
 }
 
 @media screen and (max-width: 320px) {
-
+  h1 {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
 }

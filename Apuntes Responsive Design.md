@@ -451,5 +451,13 @@ top right bottom left */
 comentario:::::::::======>
 TIP: Sólo va a tener el estilo de Sticky dentro de su elemento padre.
 
+#16
+
+enlaces::::::::::::::=====>
+Dejo la compatibildad de position: sticky; en todos los navegadores https://caniuse.com/#feat=css-sticky , para quien no la conozca https://caniuse.com/es es una gran herramienta para ver la compatibilidad de nuestro codigo en los navegadores. Tb hay extensiones para ver si nuestro codigo es compatible dentro del propio editor como vscode-caniuse o para anadir prefijos como autoprefixer
+
+comentario::::::::::::======>
+Overflow debes asignarla al contenedor que deseas que tenga el comportamiento de ocultar o dejar desbordar su contenido.
+
 
 
