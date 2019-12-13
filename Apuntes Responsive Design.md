@@ -28,7 +28,11 @@ Landscape (paisaje): horizontal
 
 Técnicas para abordar el Responsive Desing:
 Mobile first: si empiezas un websit desde la menor resolución soportada hasta la mayor
+<<<<<<< HEAD
 Desktop first: si empiezas un websit desde la mayor resolución soportada hasta la menor, empieza por la resolución más grande (Media Queri)
+=======
+Desktop first: si empiezas un websit desde la mayor resolución soportada hasta la menor
+>>>>>>> origin/features
 ¿Cúal es mejor?: Técnicamente Mobile First por posicionamiento de SEO para los clientes que navegan en nuestro sito por medio de dispositivos móviles ¿Cómo accederan los usuarios a tu contenido? por medio de google analytics sabras por donde te llegan más usuarios. Con el empiezas DESDE el tamaño minimo de pantalla hasta los más grande con ello la tendras más fácil pues las pantallas tienden a ser más amplias cada vez.
 
 Un par de librerias:
@@ -207,7 +211,10 @@ Se usa regularmente el tipo SCREEN pero en ocaciones también se usa PRINT para i
 
 enlaces:::::::::======>
 https://themeover.com/mobile-first-vs-desktop-first-responsive-design/
+<<<<<<< HEAD
 https://css-tricks.com/totally-forgot-print-style-sheets/ se puede ahondar más sobre el @media print, además muestra que desde el inspector de Chrome se pueden emular los media queries que tenga el proyecto!
+=======
+>>>>>>> origin/features
 
 comentario:::::======>
 all | Valor por defecto, usada por todos los tipos de media
@@ -219,6 +226,7 @@ speech | Se utiliza para lectores de pantalla que “lee” la página en voz alta
 @media screen and (condición) {}
 @media speech and (condición) {}
 
+<<<<<<< HEAD
 #8
 Podemos incluirlos dentro de una hoja de estilos aparte y dentro de la etiqueta <<style>>. 
 Para usar desktop first empieza por la resolución más amplia, usa los estandar de las resoluciones de pantallas que actualmente abarcan el mercado.
@@ -461,3 +469,6 @@ Overflow debes asignarla al contenedor que deseas que tenga el comportamiento de
 
 
 
+=======
+comentario:::::======>
+>>>>>>> origin/features
