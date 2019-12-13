@@ -392,5 +392,64 @@ https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
 resúmenes de Minei Toshio:
 https://github.com/MineiToshio/CursosPlatzi/tree/master/Curso de Responsive Design
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/
+
+#15
+Al invocar la propiedad position junto con alguno de sus valores desbloqueamos las propiedades: top, buttom, left, right a las que podemos asignar tanto valores positivos como negativos o diferentes unidades de medida.
+con la propiedad fixed dejamos el objeto con una posición fija
+los elementos se ordenan por defecto al lado derecho.
+
+Si queremos que al llegar a cierta sección esta nos comienze ha seguir hay dos opciones: 1. con JavaScript leemos el evento del escroll y cuando lleges a esa posición asignar el valor fixed
+2. mediante la propiedad position y el valor sticky.
+
+
+enlaces:::::::::::::::=======>
+https://codepen.io/LeonidasEsteban/pen/VGWzWK
+Tienes un editor de código oneline:
+https://codepen.io              https://repl.it/
+https://developer.mozilla.org/es/docs/Web/CSS/position
+aprendan a hacer una lista de búsqueda por Abecedario:
+https://alligator.io/css/position-sticky/
+ para entender un poco más de las posiciones:
+https://alligator.io/css/position-sticky/
+Resumen:
+https://github.com/MineiToshio/CursosPlatzi/tree/master/Curso%20de%20Responsive%20Design
+un monton de cursos:
+https://github.com/MineiToshio/CursosPlatzi
+
+https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/
+
+
+comentario::::::::::::::===========>
+tipos de posiciones
+-static = la predeterminada estatica
+-absolute = se sale de donde estaba ubicado inicialmente, pierde su espacio y se va a colocar de manera absoluta, Va a ser relativo con el objeto mas cercano que tenga seteado el position relative
+-fixed = fijo es un elemento fijo que se queda alli y se queda allí así hagamos scroll
+-sticky = es cuando pasas una sección haciendo scroll y se te pega en la parte superior o donde quisieramos
+
+Cuando aplicamos cualquiera de estos position se desbloquean:
+z-indez
+top bottom left y right y sirven para mover el elemento a donde quisieramos
+
+comentario::::::::::============>
+/* POSICIONES:
+static / PREDETERMINADA
+relative / PUEDES MOVERLO, PERO EL ESPACIO que OCUPABA SEGUIRÁ ESTANDO
+absolute / SE SALE DEL LUGAR DONDE ESTABA UBICADO, Y SE UBICA DE MANERA ABSOLUTA Y RELATIVA
+CON EL ELEMENTO MÁS CERCANO QUE TENGA POSICION RELATIVA,
+O POR DEFECTO EN NUESTRO ULTIMO ELEMENTO DE NUESTRO HTML, BODY O HTML
+fixed / PARA FIJAR UN CONTENIDO Y QUE TE PERSIGA
+sticky / PARA FIJAR UN CONTENIDO DESPUÉS DE “SUPERARLO”
+
+  position: posicion;
+CUANDO SE UTILIZA ALGUNA POSICION
+QUE NO SEA LA PREDETERMINADA
+SE NOS DESBLOQUEAN ESTAS PROPIEDADES:
+z-index
+top right bottom left */
+
+comentario:::::::::======>
+TIP: Sólo va a tener el estilo de Sticky dentro de su elemento padre.
+
 
 
