@@ -320,7 +320,6 @@ figure {
 /* desktop first, para este comienza desde la Media Querr más grande */
 
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
   .wrapper {
     padding: 0 1em;
   }
@@ -419,19 +418,16 @@ figure {
   }
   .event img {
     width: 100%;
-=======
-
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    border: 10px solid green;
->>>>>>> origin/features
   }
 }
 
+.html-video {
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
+
 @media screen and (max-width: 480px) {
-<<<<<<< HEAD
   h1 {
     font-size: 1.5em;
   }
@@ -471,11 +467,4 @@ figure {
   .hero {
     padding: 2em 1em;
   }
-=======
-
-}
-
-@media screen and (max-width: 320px) {
-
->>>>>>> origin/features
 }

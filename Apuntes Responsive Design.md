@@ -28,11 +28,7 @@ Landscape (paisaje): horizontal
 
 Técnicas para abordar el Responsive Desing:
 Mobile first: si empiezas un websit desde la menor resolución soportada hasta la mayor
-<<<<<<< HEAD
 Desktop first: si empiezas un websit desde la mayor resolución soportada hasta la menor, empieza por la resolución más grande (Media Queri)
-=======
-Desktop first: si empiezas un websit desde la mayor resolución soportada hasta la menor
->>>>>>> origin/features
 ¿Cúal es mejor?: Técnicamente Mobile First por posicionamiento de SEO para los clientes que navegan en nuestro sito por medio de dispositivos móviles ¿Cómo accederan los usuarios a tu contenido? por medio de google analytics sabras por donde te llegan más usuarios. Con el empiezas DESDE el tamaño minimo de pantalla hasta los más grande con ello la tendras más fácil pues las pantallas tienden a ser más amplias cada vez.
 
 Un par de librerias:
@@ -211,10 +207,7 @@ Se usa regularmente el tipo SCREEN pero en ocaciones también se usa PRINT para i
 
 enlaces:::::::::======>
 https://themeover.com/mobile-first-vs-desktop-first-responsive-design/
-<<<<<<< HEAD
 https://css-tricks.com/totally-forgot-print-style-sheets/ se puede ahondar más sobre el @media print, además muestra que desde el inspector de Chrome se pueden emular los media queries que tenga el proyecto!
-=======
->>>>>>> origin/features
 
 comentario:::::======>
 all | Valor por defecto, usada por todos los tipos de media
@@ -226,7 +219,6 @@ speech | Se utiliza para lectores de pantalla que “lee” la página en voz alta
 @media screen and (condición) {}
 @media speech and (condición) {}
 
-<<<<<<< HEAD
 #8
 Podemos incluirlos dentro de una hoja de estilos aparte y dentro de la etiqueta <<style>>. 
 Para usar desktop first empieza por la resolución más amplia, usa los estandar de las resoluciones de pantallas que actualmente abarcan el mercado.
@@ -460,15 +452,36 @@ comentario:::::::::======>
 TIP: Sólo va a tener el estilo de Sticky dentro de su elemento padre.
 
 #16
+Las pociciones absolutas tienen que ser relativas a algo de lo contrario se ira hasta donde pueda ocupar espacio.
+
+Requieres de "buen gusto" para realizar diseños que sean optimos que se vean bien, como la lecturabilidad del texto dentro de la página y que las cosas funcionen. Puedes darle un background a la fuente con rgba() o con una imagen con la cual el texto tenga más legibilidad.
 
 enlaces::::::::::::::=====>
 Dejo la compatibildad de position: sticky; en todos los navegadores https://caniuse.com/#feat=css-sticky , para quien no la conozca https://caniuse.com/es es una gran herramienta para ver la compatibilidad de nuestro codigo en los navegadores. Tb hay extensiones para ver si nuestro codigo es compatible dentro del propio editor como vscode-caniuse o para anadir prefijos como autoprefixer
+https://luisdark123.github.io/MediaWeb_repository/
 
 comentario::::::::::::======>
 Overflow debes asignarla al contenedor que deseas que tenga el comportamiento de ocultar o dejar desbordar su contenido.
 
+comentario::::::::::::::::==========>
+Ejemplos de uso del z-index:
+Si creamos un Navbar-menu fijo o Sticky tendremos que usar la propiedad z-index para que ningún otro elemento de nuestro sitio se sobreponga.
+Al hacer responsive habrá algunos elementos, como la imagen del hero y el h1 del portafolio de leonidas, que se colocaran uno debajo del otro y si queremos arreglarlo metiendo ese texto dentro de la imagen usaremos posiciones relativas y absolutas. Aqui es cuando los elementos pueden visualizarse o no dependiendo en la capa z-index que se encuentren. Entonces asignaremos, como en la clase, un valor al z-index para que la imagen se vea en la capa 1 y el h1 se vea en la capa 2.
+Z-index es una buena herramienta muy útil para transponer elementos que queremos que oculten o sobrepongan a otros.
+Como buena practica te recomiendo usar z-index solo en elementos que realmente lo necesitan por que yo hize una web con puras posiciones relativas cuando no entendia lo del display block e inline block y a todo le puse z-index cuando no era necesario.
+https://luisdark123.github.io/MediaWeb_repository/
 
+#17
+  <video class="html-video" src="aquí ira la ubicación del archivo o la URL" width="1640" height="360" controls></video>
+Al usar un max-width con un video se usa el máximo de ancho que hayamos definido para ese elemento
+con un ancho del 100% lograremos que se amplie en todo el entrorno que tiene disponible dentro de la página.
 
-=======
-comentario:::::======>
->>>>>>> origin/features
+enlaces::::::::=======>
+https://lenguajehtml.com/p/html/multimedia/etiquetas-html-de-video
+Documentacion de audio y video:
+audio https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio
+video https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video
+
+comentario:::::::::::::=========>
+Vas a youtube y en compartir vas al boton insertar y copias el codigo que te da. Como este:
+<iframe width=“560” height=“315” src=“https://www.youtube.com/embed/cqpzCLjjgJU” frameborder=“0” allow=“accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe>
