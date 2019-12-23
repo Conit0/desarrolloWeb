@@ -13,7 +13,8 @@
 /* Gris oscuro: #1d252c;
 gris claro: #626262;
 background gris: #1b2127; 
-Celeste: #026fff; */
+Celeste: #026fff; 
+background: #056fff*/
 
 @font-face {
   font-family: 'icomoon';
@@ -428,10 +429,33 @@ figure {
   .header a {
     flex: 1;
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
   }
   .header .logo {
     text-align: center;
   }
+
+  .menu {
+    position: fixed;
+    background: rgba(5, 111, 255, .8);
+    z-index: 3; /*Para que quede detras del menu de hamburgesa*/
+    top: 0;
+    left: -100vw; /*permite interpolacion a si misma para asignar una transición*/
+    width: 100vw; /*tendremos el 100% del ancho del viewport*/
+    /* height: 100vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .menu.is-active {
+    left: 0; /*hace falta meter esta clase en HTML*/
+  }
+
   .project {
     display: block;
   }

@@ -533,12 +533,56 @@ https://www.geeksforgeeks.org/wildcard-selectors-and-in-css-for-classes/
 
 #20 
 Podemos colocar varios nombres de clase a un elemto con solo separar los nombre dentro de la clase: class="primeraClase segundaClase terceraClase">.
-Al elemto agragamos display: block; para que tome el ancho y el alto.
+Al elemto agragamos display: block; para que tome el ancho y el alto, ya que pordefecto es display: inline;
+rgba(0, 0, 0, .8); rojo, verde, azul, opacidad o transparencia.
 
+una forma para centrar
+.nombreClase {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
+otra forma para centrar
+.nombreClase {
+  background-color: rgba(0, 0, 0, .8);
+  display: none; /* esto para luego indicar la condición en que tamaño se debe ver*/
+line-height: 40px;
+text-align: center;
+position: fixed; /* el elmento sera visible por toda la página al hacer scroll */
+z-index: 4; /* el valor es cuatro porque los otros ya estan por ahí*/
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+ 
+#21
+Dentro del inspecionador de elementos, selecionamos un elemento, luego el valor del background y habra una pequeña flecha, al opromirla veremos despegados varios valores que ya han sido seteadas automaticamente al definir ese background, gracias a esto encontraremos el valor del color en RGB, esto nos resulta util si queremos el color que definimos como hexadecimal y queremos agregarle por medio de RGB algo de transparencia con RGBA()
+Para ocultar el contenido de mi <ol></ol> puedo usar valores negativos y medidas que abarquen porcentages más amplios como <<-100vw>>.
+Mediante el inspecionador de elementos puedo modificar el CSS y ademas el código HTML.
 
+enlaces :::::::::::::::::===========>
+¿Qué propiedad se desbloquea luego de asignar un position diferente de static en un elemento?
+https://developer.mozilla.org/es/docs/Web/CSS/position
 
+comentario::::::::::::::========>
+Icono con Id “burguer”
+<i id="burguer"class="icon-menu burger-button"></i>
 
+Script
+<scripttype="text/javascript">
+      const menu = document.querySelector('.menu')
+      const burgerButton = document.getElementById('burguer')
+      const hideShow = () => menu.classList.contains('is-active') ? menu.classList.remove('is-active') : menu.classList.add('is-active')
+      burgerButton.addEventListener('click', hideShow)
+</script>
+
+comentario:::::::::::::==========>
+Posicionando menú
+Para poder posicionar el menú, debemos configurarle primeramente la propiedad de position con valor fixed y su respectivo valor en la propiedad z-index (de 3 para que no se superponga al menú de hamburguesa).
+Para determinar un color en rgba, podemos ubicarnos en el inspector de elementos, desplegar la propiedad background que tenga en el momento dicho elemento y ubicarnos en su color de rgba.
+Otra manera de centrar el texto en el menú aparte de las propiedades de centrado, se puede lograr añadiéndole un valor a bottom, de 0 y quitando la altura (que eventualmente heredara la altura del elemento padre, la cual es auto).
+Para añadir una transición a algun elemento en css, podemos usar la propiedad transition y añadirle un valor de tiempo (ejemplo: .3s).
 
 
 
