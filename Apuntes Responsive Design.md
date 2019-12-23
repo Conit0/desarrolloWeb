@@ -485,3 +485,44 @@ video https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video
 comentario:::::::::::::=========>
 Vas a youtube y en compartir vas al boton insertar y copias el codigo que te da. Como este:
 <iframe width=“560” height=“315” src=“https://www.youtube.com/embed/cqpzCLjjgJU” frameborder=“0” allow=“accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe>
+
+#19
+Algunos iconos serán un tipo de fuente que incertaremos en el sistema, por eso puede que nos descargen un archivo .zip con varios archivos; tomaremos la carperta fonts y el contenido del archivo styles.css copiaremos su contenido, modifamos las rutas hacia la carpeta fonts y aplicaremos la clase que esta dentro del archivo styles.css en algun elemento HTML para esto se recomienda la etiqueta <i></i> siendo este tag para colocarla en italica (cursiva) el texto que escribamos dentro, cuando añadamos la clase el contenido de fuentes al que hace referencia esta clase no se vera afectado.
+
+
+enlaces:::::=====>
+Pueden usar
+https://fontawesome.com/icons
+https://material.io/tools/icons/
+https://iconos8.es/
+O hacer su icono personalizado en SVG con Adobe XD o Illustrato
+
+Buscamos el paquete de iconos o sólo el que necesitemos, descargamos la fuente, tendremos un archivo ZIP:
+https://icomoon.io/
+
+comentario::::::::::::::::::::===============>
+Wildcard selectors (*, ^ , $)
+Estos selectores seleccionan elementos con atributos de tipo similar.
+
+(*) Se utiliza para seleccionar esos elementos cuyo valor de atributo CONTENGA el string indicado
+[class*="span"] {
+	...
+}
+Se seleccionaría el elemento strong porque, en este caso, su clase contiene la palabra span
+
+<divclass="show-grid">
+    <strong class="span6">Blah blah</strong>
+</div>
+(^) Se utiliza para seleccionar los elementos cuyo valor de atributo EMPIEZA por esa cadena de texto
+[class^="something"] {
+	...
+}
+<div class="something-else-class"></div>
+($) Selecciona los elementos cuyo valor de atributo TERMINA por esa cadena de texto
+[class$="something"] { 
+	...
+}
+<div class="you-are-something"></div>
+Fuentes:
+https://stackoverflow.com/questions/9836151/what-is-this-css-selector-class-span
+https://www.geeksforgeeks.org/wildcard-selectors-and-in-css-for-classes/
