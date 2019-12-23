@@ -348,6 +348,21 @@ figure {
   flex-wrap: inherit;
 }
 
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /*esto seriá igual a colocar 20px ya que toma el 50% del valor de medida otrogado a este elemento*/
+  background-color: rgba(0, 0, 0, .8);
+  display: none; /* no se vera hasta que cumpla una condición como el tamaño de la pantalla */
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
 /* desktop first, para este comienza desde la Media Querr más grande */
 
 @media screen and (max-width: 1024px) {
@@ -378,6 +393,11 @@ figure {
 
 /* Un pixel más abajo del Ipad */
 @media screen and (max-width: 767px) { 
+
+  .burger-button {
+    display: block;
+  }
+
   .hero {
     height: auto;
     position: relative;

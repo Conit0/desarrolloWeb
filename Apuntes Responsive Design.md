@@ -500,6 +500,10 @@ O hacer su icono personalizado en SVG con Adobe XD o Illustrato
 Buscamos el paquete de iconos o sólo el que necesitemos, descargamos la fuente, tendremos un archivo ZIP:
 https://icomoon.io/
 
+Fuentes:
+https://stackoverflow.com/questions/9836151/what-is-this-css-selector-class-span
+https://www.geeksforgeeks.org/wildcard-selectors-and-in-css-for-classes/
+
 comentario::::::::::::::::::::===============>
 Wildcard selectors (*, ^ , $)
 Estos selectores seleccionan elementos con atributos de tipo similar.
@@ -526,3 +530,18 @@ Se seleccionaría el elemento strong porque, en este caso, su clase contiene la p
 Fuentes:
 https://stackoverflow.com/questions/9836151/what-is-this-css-selector-class-span
 https://www.geeksforgeeks.org/wildcard-selectors-and-in-css-for-classes/
+
+#20 
+Podemos colocar varios nombres de clase a un elemto con solo separar los nombre dentro de la clase: class="primeraClase segundaClase terceraClase">.
+Al elemto agragamos display: block; para que tome el ancho y el alto.
+
+
+
+
+
+
+
+
+
+
+
