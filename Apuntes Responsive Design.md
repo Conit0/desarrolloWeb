@@ -584,8 +584,44 @@ Para determinar un color en rgba, podemos ubicarnos en el inspector de elementos
 Otra manera de centrar el texto en el menú aparte de las propiedades de centrado, se puede lograr añadiéndole un valor a bottom, de 0 y quitando la altura (que eventualmente heredara la altura del elemento padre, la cual es auto).
 Para añadir una transición a algun elemento en css, podemos usar la propiedad transition y añadirle un valor de tiempo (ejemplo: .3s).
 
+#22
+Los elemento de id=" " no se pueden repetir en la página, son usados para designar de manera única un solo elemento, el selector de id es # (hash, almohadilla, numeral)
 
+Ten encuenta lo signos que encierran el código en algunas ocaciones puede que coloque uno más de la cuenta o coloque es signo incorrento para esa acción.  () {} []
 
+Un issue es algo así como una pequeña falencia dentro del código.
 
+    burgerButton.addEventListener('click', hideShow)
 
+burgerButton = es el elemento que manejaremos
+.addEventListener = es la acción que va realizar el elemento escogido
+'click' = el evento que va escuchar el termino anterior
+hideShow = separado por una coma ira el nombre de la funcion
+
+comentario:::::::::::::::=========>
+Si quieren que al precionar los <a> cierre el menu:
+<iclass="icon-menu burguer_button menu_e"></i>
+<navclass="menu nav_content_responsive">
+          <ol>
+            <li>
+              <aclass="link menu_e"href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <aclass="link menu_e"href="#eventos">Experiencia</a>
+            </li>
+            <li>
+              <aclass="link menu_e"href="#contacto">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+const options = document.querySelector('.nav_content_responsive');
+const allmenus = document.querySelectorAll('.menu_e');
+
+allmenus.forEach((element)=>{
+    element.addEventListener('click', menu);
+});
+
+function menu(){
+    options.classList.toggle('is_active_menu');
+}
 
