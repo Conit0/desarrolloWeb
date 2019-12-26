@@ -625,3 +625,21 @@ function menu(){
     options.classList.toggle('is_active_menu');
 }
 
+
+#23
+Es importante usar el console.log () y con eso ver si estamos ejecutando idoneamente el código JavaScript
+
+    const ipad = window.matchMedia('screen and (max-width: 767px)')
+
+    ipad.addListener(validation)
+
+    function validation(event) {
+      console.log(event) // se vera el console log cuando el viewport se redusca al tamaño especificado en el media querie
+    }
+
+addListener = lanzara un función que va invocar otra función dependiendo de si se a desactivado o activado
+Una vez capturado el elmento, veremos que aparece en consola y valor sera true para <<matches: true>>
+podemos especificar solo el valor de matches así: console.log(event.matches)
+
+comentario::::::::======>
+La función addListener tiene como parámetro otra función, en este caso la llamamos “validation”, y para saber lo que contiene usamos un parámetro “event” para encontrar el atributo que nos dice si el match del media query esta activo o no cuando cambiamos la resolución, y así poder activarlo o desactivarlo en el momento necesario. Un saludo.

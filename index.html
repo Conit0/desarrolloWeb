@@ -169,13 +169,24 @@
   </div>
   <script type="text/javascript">
     console.log('Hola consola');
-
+    //console.log(window.matchMedia('screen and (max-width: 767px)'))//Recibe una consulta a los medios
+    const ipad = window.matchMedia('screen and (max-width: 767px)')
     const menu = document.querySelector('.menu')
     console.log(menu)
     const burgerButton = document.querySelector('#burger-menu')
     console.log(burgerButton)
 
-    burgerButton.addEventListener('click', hideShow)
+
+    ipad.addListener(validation)
+
+    function validation(event) {
+      if (event.matches) {
+        burgerButton.addEventListener('click', hideShow)
+      } else {
+        burgerButton.removeEventListener('click', hideShow)
+      }
+      //console.log(event.matches) // se vera el console log cuando el viewport se redusca al tamaño especificado en el media querie
+    }
 
     function hideShow() {
       if (menu.classList.contains('is-active')) {
